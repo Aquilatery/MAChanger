@@ -54,7 +54,7 @@ namespace MAChanger
         private void SAVE_Click(object sender, System.EventArgs e)
         {
             if (!Adapter.ControlMAC(NewMAC.Text, false))
-                MessageBox.Show("Girilen MAC Adresi Geçersiz, Güncellenmeyecek!", "Geçersiz MAC Adresi Belirtildi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Girilen MAC Adresi Geçersiz, Güncellenmeyecek!", "Geçersiz MAC Adresi", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             SetMAC(NewMAC.Text);
         }
@@ -70,9 +70,9 @@ namespace MAChanger
 
             if (Adapter.SetRegistryMAC(MAC))
             {
-                Thread.Sleep(50);
+                Thread.Sleep(111);
+                MessageBox.Show("MAC Adresi Başarıyla Değiştirildi!", "MAC Adresi Değiştirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 UA();
-                MessageBox.Show("Güzel!", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }

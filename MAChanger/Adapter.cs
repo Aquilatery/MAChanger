@@ -23,9 +23,7 @@ namespace MAChanger
             DevNum = DN;
         }
 
-        public Adapter(NetworkInterface i) : this(i.Description)
-        {
-        }
+        public Adapter(NetworkInterface i) : this(i.Description) { }
 
         private Adapter(string AName)
         {
@@ -98,37 +96,43 @@ namespace MAChanger
         public bool SetRegistryMAC(string Value)
         {
             bool ShouldReenable = false;
-
             try
             {
                 if (Value.Length > 0 && !ControlMAC(Value, false))
                     throw new Exception(Value + " Geçerli Bir MAC Adresi Değil!");
-
-                using (RegistryKey RegKey = Registry.LocalMachine.OpenSubKey(RegistryKey, true))
+                else
                 {
-                    if (RegKey == null)
-                        throw new Exception("Kayıt Defteri Anahtarı Açılamadı!");
+                    using (RegistryKey RegKey = Registry.LocalMachine.OpenSubKey(RegistryKey, true))
+                    {
+                        if (RegKey == null)
+                            throw new Exception("Kayıt Defteri Anahtarı Açılamadı!");
+                        else if (RegKey.GetValue("AdapterModel") as string != AdapterName && RegKey.GetValue("DriverDesc") as string != AdapterName)
+                            throw new Exception("Adaptör Kayıt Defterinde Bulunamadı!");
+                        else
+                        {
+                            string Question = Value.Length > 0 ? "{0} Adaptörünün {1} Olan MAC Adresi {2} Olarak Değiştirilsin Mi?" : "{0} Adaptörünün MAC Adresinin Ayarları Geri Çekilsin Mi?";
+                            DialogResult Proceed = MessageBox.Show(String.Format(Question, ToString(), GMAC, Value), "MAC Adresi Değiştirme", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                            if (Proceed != DialogResult.Yes)
+                                return false;
+                            else
+                            {
+                                var Result = (uint)VAdapter.InvokeMethod("Disable", null);
+                                if (Result != 0)
+                                    throw new Exception("Adaptör Devre Dışı Bırakılamadı!");
+                                else
+                                {
+                                    ShouldReenable = true;
 
-                    if (RegKey.GetValue("AdapterModel") as string != AdapterName && RegKey.GetValue("DriverDesc") as string != AdapterName)
-                        throw new Exception("Adaptör Kayıt Defterinde Bulunamadı!");
+                                    if (Value.Length > 0)
+                                        RegKey.SetValue("NetworkAddress", Value, RegistryValueKind.String);
+                                    else if (!string.IsNullOrEmpty(RegKey.GetValue("NetworkAddress") as string))
+                                        RegKey.DeleteValue("NetworkAddress");
 
-                    string Question = Value.Length > 0 ? "{0} Adaptörünün {1} Olan MAC Adresi {2} Olarak Değiştirilsin Mi?" : "{0} Adaptörünün MAC Adresinin Ayarları Geri Çekilsin Mi?";
-                    DialogResult Proceed = MessageBox.Show(String.Format(Question, ToString(), GMAC, Value), "MAC Adresi Değiştirme?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                    if (Proceed != DialogResult.Yes)
-                        return false;
-
-                    var Result = (uint)VAdapter.InvokeMethod("Disable", null);
-                    if (Result != 0)
-                        throw new Exception("Adaptör Devre Dışı Bırakılamadı!");
-
-                    ShouldReenable = true;
-
-                    if (Value.Length > 0)
-                        RegKey.SetValue("NetworkAddress", Value, RegistryValueKind.String);
-                    else
-                        RegKey.DeleteValue("NetworkAddress");
-
-                    return true;
+                                    return true;
+                                }
+                            }
+                        }
+                    }
                 }
             }
             catch (Exception Ex)
