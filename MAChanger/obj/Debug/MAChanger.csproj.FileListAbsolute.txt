@@ -1,7 +1,6 @@
 E:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Debug\MAChanger.exe.config
 E:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Debug\MAChanger.exe
 E:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Debug\MAChanger.pdb
-E:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Debug\MAChanger.csprojAssemblyReference.cache
 E:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Debug\MAChanger.Main.resources
 E:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Debug\MAChanger.Properties.Resources.resources
 E:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Debug\MAChanger.csproj.GenerateResource.cache

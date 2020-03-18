@@ -72,7 +72,7 @@
             this.Current.Name = "Current";
             this.Current.Size = new System.Drawing.Size(166, 20);
             this.Current.TabIndex = 3;
-            this.Current.Text = "Kullanılan MAC Adresi:";
+            this.Current.Text = "MAC Address Used:";
             this.Current.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // New
@@ -81,7 +81,7 @@
             this.New.Name = "New";
             this.New.Size = new System.Drawing.Size(166, 20);
             this.New.TabIndex = 4;
-            this.New.Text = "Değiştirilecek MAC Adresi:";
+            this.New.Text = "New MAC Address:";
             this.New.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Refresh
@@ -91,7 +91,7 @@
             this.Refresh.Name = "Refresh";
             this.Refresh.Size = new System.Drawing.Size(75, 20);
             this.Refresh.TabIndex = 5;
-            this.Refresh.Text = "Yenile";
+            this.Refresh.Text = "Refresh";
             this.Refresh.UseVisualStyleBackColor = true;
             this.Refresh.Click += new System.EventHandler(this.Refresh_Click);
             // 
@@ -102,7 +102,7 @@
             this.Summon.Name = "Summon";
             this.Summon.Size = new System.Drawing.Size(75, 20);
             this.Summon.TabIndex = 6;
-            this.Summon.Text = "Oluştur";
+            this.Summon.Text = "Generate";
             this.Summon.UseVisualStyleBackColor = true;
             this.Summon.Click += new System.EventHandler(this.Summon_Click);
             // 
@@ -115,7 +115,7 @@
             this.SAVE.Name = "SAVE";
             this.SAVE.Size = new System.Drawing.Size(88, 35);
             this.SAVE.TabIndex = 7;
-            this.SAVE.Text = "KAYDET";
+            this.SAVE.Text = "SAVE";
             this.SAVE.UseVisualStyleBackColor = true;
             this.SAVE.Click += new System.EventHandler(this.SAVE_Click);
             // 
@@ -127,7 +127,7 @@
             this.BACK.Name = "BACK";
             this.BACK.Size = new System.Drawing.Size(88, 35);
             this.BACK.TabIndex = 8;
-            this.BACK.Text = "GERİ AL";
+            this.BACK.Text = "UNDO";
             this.BACK.UseVisualStyleBackColor = true;
             this.BACK.Click += new System.EventHandler(this.BACK_Click);
             // 
@@ -150,7 +150,7 @@
             this.MaximizeBox = false;
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MAC Changer v1.1";
+            this.Text = "MAC Changer v1.2";
             this.Load += new System.EventHandler(this.Main_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

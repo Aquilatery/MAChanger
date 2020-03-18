@@ -29,6 +29,7 @@ namespace MAChanger
                 NewMAC.Text = MAC.RegistryMAC;
             else
                 NewMAC.Text = CurrentMAC.Text;
+            SAVE.Enabled = (CurrentMAC.Text != NewMAC.Text);
         }
 
         private void Refresh_Click(object sender, System.EventArgs e)
@@ -48,30 +49,30 @@ namespace MAChanger
 
         private void NewMAC_TextChanged(object sender, System.EventArgs e)
         {
-            SAVE.Enabled = Adapter.ControlMAC(NewMAC.Text, false);
+            SAVE.Enabled = (Adapter.ControlMAC(NewMAC.Text, false) == (CurrentMAC.Text != NewMAC.Text));
         }
 
         private void SAVE_Click(object sender, System.EventArgs e)
         {
             if (!Adapter.ControlMAC(NewMAC.Text, false))
-                MessageBox.Show("Girilen MAC Adresi Geçersiz, Güncellenmeyecek!", "Geçersiz MAC Adresi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("The MAC Address Entered is Invalid, It Will Not Be Updated!", "Invalid MAC Address", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-            SetMAC(NewMAC.Text);
+            SetMAC(NewMAC.Text, "Change MAC Address");
         }
 
         private void BACK_Click(object sender, System.EventArgs e)
         {
-            SetMAC("");
+            SetMAC("", "Undo MAC Address");
         }
 
-        public void SetMAC(string MAC)
+        public void SetMAC(string MAC, string Title)
         {
             Adapter Adapter = Adapters.SelectedItem as Adapter;
 
-            if (Adapter.SetRegistryMAC(MAC))
+            if (Adapter.SetRegistryMAC(MAC, Title))
             {
                 Thread.Sleep(111);
-                MessageBox.Show("MAC Adresi Başarıyla Değiştirildi!", "MAC Adresi Değiştirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("MAC Address Successfully Changed!", Title, MessageBoxButtons.OK, MessageBoxIcon.Information);
                 UA();
             }
         }

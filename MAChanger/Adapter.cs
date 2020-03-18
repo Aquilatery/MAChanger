@@ -93,32 +93,32 @@ namespace MAChanger
             }
         }
 
-        public bool SetRegistryMAC(string Value)
+        public bool SetRegistryMAC(string Value, string Title)
         {
             bool ShouldReenable = false;
             try
             {
                 if (Value.Length > 0 && !ControlMAC(Value, false))
-                    throw new Exception(Value + " Geçerli Bir MAC Adresi Değil!");
+                    throw new Exception(Value + " Is Not a Valid MAC Address!");
                 else
                 {
                     using (RegistryKey RegKey = Registry.LocalMachine.OpenSubKey(RegistryKey, true))
                     {
                         if (RegKey == null)
-                            throw new Exception("Kayıt Defteri Anahtarı Açılamadı!");
+                            throw new Exception("Registry Key Could Not Be Opened!");
                         else if (RegKey.GetValue("AdapterModel") as string != AdapterName && RegKey.GetValue("DriverDesc") as string != AdapterName)
-                            throw new Exception("Adaptör Kayıt Defterinde Bulunamadı!");
+                            throw new Exception("Adapter Not Found in Registry!");
                         else
                         {
-                            string Question = Value.Length > 0 ? "{0} Adaptörünün {1} Olan MAC Adresi {2} Olarak Değiştirilsin Mi?" : "{0} Adaptörünün MAC Adresinin Ayarları Geri Çekilsin Mi?";
-                            DialogResult Proceed = MessageBox.Show(String.Format(Question, ToString(), GMAC, Value), "MAC Adresi Değiştirme", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                            string Question = Value.Length > 0 ? "MAC Address of Adapter {0}: {1}\nChange New MAC Address To {2}?" : "Retract MAC Address Settings of Adapter {0}?";
+                            DialogResult Proceed = MessageBox.Show(String.Format(Question, ToString(), GMAC, Value), Title, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                             if (Proceed != DialogResult.Yes)
                                 return false;
                             else
                             {
                                 var Result = (uint)VAdapter.InvokeMethod("Disable", null);
                                 if (Result != 0)
-                                    throw new Exception("Adaptör Devre Dışı Bırakılamadı!");
+                                    throw new Exception("Adapter Could Not Be Disabled!");
                                 else
                                 {
                                     ShouldReenable = true;
@@ -146,7 +146,7 @@ namespace MAChanger
                 {
                     uint Result = (uint)VAdapter.InvokeMethod("Enable", null);
                     if (Result != 0)
-                        MessageBox.Show("Adaptör Yeniden Aktifleştirilemedi!");
+                        MessageBox.Show("Adapter Could Not Be Reactivated!");
                 }
             }
         }
