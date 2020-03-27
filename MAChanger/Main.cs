@@ -54,10 +54,10 @@ namespace MAChanger
 
         private void SAVE_Click(object sender, System.EventArgs e)
         {
-            if (!Adapter.ControlMAC(NewMAC.Text, false))
+            if (Adapter.ControlMAC(NewMAC.Text, false))
+                SetMAC(NewMAC.Text, "Change MAC Address");
+            else
                 MessageBox.Show("The MAC Address Entered is Invalid, It Will Not Be Updated!", "Invalid MAC Address", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-            SetMAC(NewMAC.Text, "Change MAC Address");
         }
 
         private void BACK_Click(object sender, System.EventArgs e)
