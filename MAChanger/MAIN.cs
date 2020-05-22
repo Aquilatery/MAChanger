@@ -51,7 +51,11 @@ namespace MAChanger
 
         private void New_TB_TextChanged(object sender, EventArgs e)
         {
-            Save_B.Enabled = (Adapter.ControlMAC(New_TB.Text, false) == (Current_TB.Text != New_TB.Text));
+            if (New_TB.Text != New_TB.Text.ToUpper())
+                Save_B.Enabled = false;
+                //New_TB.Text = New_TB.Text.ToUpper();
+            else
+                Save_B.Enabled = Adapter.ControlMAC(New_TB.Text, false) == (Current_TB.Text != New_TB.Text);
         }
 
         private void Save_B_Click(object sender, EventArgs e)
@@ -73,7 +77,7 @@ namespace MAChanger
 
             if (Adapter.SetRegistryMAC(MAC, Title))
             {
-                Thread.Sleep(111);
+                Thread.Sleep(333);
                 MessageBox.Show("MAC Address Successfully Changed!", Title, MessageBoxButtons.OK, MessageBoxIcon.Information);
                 UA();
             }
