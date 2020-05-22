@@ -6,3 +6,9 @@ E:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Debug\MAChanger.Properties.Re
 E:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Debug\MAChanger.csproj.GenerateResource.cache
 E:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Debug\MAChanger.exe
 E:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Debug\MAChanger.pdb
+E:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Debug\MAChanger.csprojAssemblyReference.cache
+E:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Debug\MAChanger.csproj.CoreCompileInputs.cache
+E:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Debug\ReaLTaiizor.dll
+E:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Debug\MAChanger.Last.resources
+E:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Debug\MAChanger.csproj.CopyComplete
+E:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Debug\MAChanger.g.resources

@@ -44,23 +44,36 @@
     <ApplicationManifest>APP.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ReaLTaiizor, Version=3.7.6.7, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ReaLTaiizor.3.7.6.7\lib\net48\ReaLTaiizor.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Management" />
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adapter.cs" />
-    <Compile Include="Main.cs">
+    <Compile Include="LAST.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main.Designer.cs">
-      <DependentUpon>Main.cs</DependentUpon>
+    <Compile Include="LAST.Designer.cs">
+      <DependentUpon>LAST.cs</DependentUpon>
     </Compile>
     <Compile Include="MAChanger.cs" />
+    <Compile Include="MAIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAIN.Designer.cs">
+      <DependentUpon>MAIN.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Main.resx">
-      <DependentUpon>Main.cs</DependentUpon>
+    <EmbeddedResource Include="LAST.resx">
+      <DependentUpon>LAST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAIN.resx">
+      <DependentUpon>MAIN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -73,6 +86,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="APP.manifest" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -87,28 +101,31 @@
     <None Include="APP.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Wifi1.ico" />
+    <Resource Include="Resources\Wifi1.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Wifi2.ico" />
+    <Resource Include="Resources\Wifi2.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Wifi3.ico" />
+    <Resource Include="Resources\Wifi3.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Wifi4.ico" />
+    <Resource Include="Resources\Wifi4.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Wifi5.ico" />
+    <Resource Include="Resources\Wifi5.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Wifi6.ico" />
+    <Resource Include="Resources\Wifi6.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Wifi7.ico" />
+    <Resource Include="Resources\Wifi7.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Wifi8.ico" />
+    <Resource Include="Resources\Wifi8.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Wifi.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

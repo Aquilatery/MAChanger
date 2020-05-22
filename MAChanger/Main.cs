@@ -1,73 +1,75 @@
-﻿using System.Linq;
+﻿using System;
+using ReaLTaiizor;
+using System.Linq;
 using System.Threading;
 using System.Windows.Forms;
 using System.Net.NetworkInformation;
 
 namespace MAChanger
 {
-    public partial class Main : Form
+    public partial class MAIN : LostForm
     {
-        public Main()
+        public MAIN()
         {
             InitializeComponent();
         }
 
-        private void Main_Load(object sender, System.EventArgs e)
+        private void MAIN_Load(object sender, EventArgs e)
         {
             foreach (NetworkInterface Adapter in NetworkInterface.GetAllNetworkInterfaces().Where(FA => Adapter.ControlMAC(FA.GetPhysicalAddress().GetAddressBytes(), true)).OrderByDescending(FA => FA.IsReceiveOnly))
-                Adapters.Items.Add(new Adapter(Adapter));
+                Adapters_CB.Items.Add(new Adapter(Adapter));
 
-            if (Adapters.Items.Count > 0)
-                Adapters.SelectedIndex = Adapters.Items.Count - 1;
+            if (Adapters_CB.Items.Count > 0)
+                Adapters_CB.SelectedIndex = Adapters_CB.Items.Count - 1;
         }
 
         public void UA()
         {
-            Adapter MAC = Adapters.SelectedItem as Adapter;
-            CurrentMAC.Text = MAC.GMAC;
+            Adapter MAC = Adapters_CB.SelectedItem as Adapter;
+            Current_TB.Text = MAC.GMAC;
             if (!string.IsNullOrEmpty(MAC.RegistryMAC))
-                NewMAC.Text = MAC.RegistryMAC;
+                New_TB.Text = MAC.RegistryMAC;
             else
-                NewMAC.Text = CurrentMAC.Text;
-            SAVE.Enabled = (CurrentMAC.Text != NewMAC.Text);
+                New_TB.Text = Current_TB.Text;
+            Save_B.Enabled = (Current_TB.Text != New_TB.Text);
         }
 
-        private void Refresh_Click(object sender, System.EventArgs e)
+        private void Refresh_B_Click(object sender, EventArgs e)
         {
             UA();
         }
 
-        private void Adapters_SelectedIndexChanged(object sender, System.EventArgs e)
+        private void Adapters_CB_SelectedIndexChanged(object sender, EventArgs e)
         {
             UA();
         }
 
-        private void Summon_Click(object sender, System.EventArgs e)
+        private void Generate_B_Click(object sender, EventArgs e)
         {
-            NewMAC.Text = Adapter.CreateMAC();
+            New_TB.Text = Adapter.CreateMAC();
         }
 
-        private void NewMAC_TextChanged(object sender, System.EventArgs e)
+        private void New_TB_TextChanged(object sender, EventArgs e)
         {
-            SAVE.Enabled = (Adapter.ControlMAC(NewMAC.Text, false) == (CurrentMAC.Text != NewMAC.Text));
+            Save_B.Enabled = (Adapter.ControlMAC(New_TB.Text, false) == (Current_TB.Text != New_TB.Text));
         }
 
-        private void SAVE_Click(object sender, System.EventArgs e)
+        private void Save_B_Click(object sender, EventArgs e)
         {
-            if (Adapter.ControlMAC(NewMAC.Text, false))
-                SetMAC(NewMAC.Text, "Change MAC Address");
+            if (Adapter.ControlMAC(New_TB.Text, false))
+                SetMAC(New_TB.Text, "Change MAC Address");
             else
                 MessageBox.Show("The MAC Address Entered is Invalid, It Will Not Be Updated!", "Invalid MAC Address", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
-        private void BACK_Click(object sender, System.EventArgs e)
+        private void Undo_B_Click(object sender, EventArgs e)
         {
             SetMAC("", "Undo MAC Address");
         }
 
         public void SetMAC(string MAC, string Title)
         {
-            Adapter Adapter = Adapters.SelectedItem as Adapter;
+            Adapter Adapter = Adapters_CB.SelectedItem as Adapter;
 
             if (Adapter.SetRegistryMAC(MAC, Title))
             {

@@ -1,9 +1,16 @@
 ﻿namespace MAChanger
 {
-    partial class Main
+    partial class MAIN
     {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -13,159 +20,194 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer üretilen kod
+        #region Windows Form Designer generated code
 
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            this.Adapters = new System.Windows.Forms.ComboBox();
-            this.CurrentMAC = new System.Windows.Forms.TextBox();
-            this.NewMAC = new System.Windows.Forms.TextBox();
-            this.Current = new System.Windows.Forms.Label();
-            this.New = new System.Windows.Forms.Label();
-            this.Refresh = new System.Windows.Forms.Button();
-            this.Summon = new System.Windows.Forms.Button();
-            this.SAVE = new System.Windows.Forms.Button();
-            this.BACK = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MAIN));
+            this.Adapters_CB = new ReaLTaiizor.ForeverComboBox();
+            this.Refresh_B = new ReaLTaiizor.LostAcceptButton();
+            this.Generate_B = new ReaLTaiizor.LostCancelButton();
+            this.Current_L = new ReaLTaiizor.ForeverLabel();
+            this.New_L = new ReaLTaiizor.ForeverLabel();
+            this.New_TB = new ReaLTaiizor.ForeverTextBox();
+            this.Current_TB = new ReaLTaiizor.ForeverTextBox();
+            this.Save_B = new ReaLTaiizor.LostButton();
+            this.Undo_B = new ReaLTaiizor.LostButton();
             this.SuspendLayout();
             // 
-            // Adapters
+            // Adapters_CB
             // 
-            this.Adapters.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Adapters.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Adapters.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Adapters.FormattingEnabled = true;
-            this.Adapters.Location = new System.Drawing.Point(12, 12);
-            this.Adapters.Name = "Adapters";
-            this.Adapters.Size = new System.Drawing.Size(364, 21);
-            this.Adapters.TabIndex = 0;
-            this.Adapters.SelectedIndexChanged += new System.EventHandler(this.Adapters_SelectedIndexChanged);
+            this.Adapters_CB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(38)))));
+            this.Adapters_CB.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Adapters_CB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.Adapters_CB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Adapters_CB.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.Adapters_CB.ForeColor = System.Drawing.Color.White;
+            this.Adapters_CB.FormattingEnabled = true;
+            this.Adapters_CB.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
+            this.Adapters_CB.ItemHeight = 18;
+            this.Adapters_CB.Location = new System.Drawing.Point(5, 39);
+            this.Adapters_CB.MaxDropDownItems = 12;
+            this.Adapters_CB.Name = "Adapters_CB";
+            this.Adapters_CB.Size = new System.Drawing.Size(394, 24);
+            this.Adapters_CB.TabIndex = 3;
+            this.Adapters_CB.SelectedIndexChanged += new System.EventHandler(this.Adapters_CB_SelectedIndexChanged);
             // 
-            // CurrentMAC
+            // Refresh_B
             // 
-            this.CurrentMAC.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.CurrentMAC.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.CurrentMAC.Location = new System.Drawing.Point(185, 39);
-            this.CurrentMAC.MaxLength = 12;
-            this.CurrentMAC.Name = "CurrentMAC";
-            this.CurrentMAC.ReadOnly = true;
-            this.CurrentMAC.Size = new System.Drawing.Size(110, 20);
-            this.CurrentMAC.TabIndex = 1;
-            this.CurrentMAC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Refresh_B.BackColor = System.Drawing.Color.SeaGreen;
+            this.Refresh_B.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Refresh_B.ForeColor = System.Drawing.Color.White;
+            this.Refresh_B.HoverColor = System.Drawing.Color.ForestGreen;
+            this.Refresh_B.Image = null;
+            this.Refresh_B.Location = new System.Drawing.Point(295, 69);
+            this.Refresh_B.Name = "Refresh_B";
+            this.Refresh_B.Size = new System.Drawing.Size(104, 29);
+            this.Refresh_B.TabIndex = 5;
+            this.Refresh_B.Text = "Refresh";
+            this.Refresh_B.Click += new System.EventHandler(this.Refresh_B_Click);
             // 
-            // NewMAC
+            // Generate_B
             // 
-            this.NewMAC.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.NewMAC.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.NewMAC.Location = new System.Drawing.Point(185, 64);
-            this.NewMAC.MaxLength = 12;
-            this.NewMAC.Name = "NewMAC";
-            this.NewMAC.Size = new System.Drawing.Size(110, 20);
-            this.NewMAC.TabIndex = 2;
-            this.NewMAC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.NewMAC.TextChanged += new System.EventHandler(this.NewMAC_TextChanged);
+            this.Generate_B.BackColor = System.Drawing.Color.Crimson;
+            this.Generate_B.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Generate_B.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Generate_B.ForeColor = System.Drawing.Color.White;
+            this.Generate_B.HoverColor = System.Drawing.Color.IndianRed;
+            this.Generate_B.Image = null;
+            this.Generate_B.Location = new System.Drawing.Point(295, 104);
+            this.Generate_B.Name = "Generate_B";
+            this.Generate_B.Size = new System.Drawing.Size(104, 29);
+            this.Generate_B.TabIndex = 6;
+            this.Generate_B.Text = "Generate";
+            this.Generate_B.Click += new System.EventHandler(this.Generate_B_Click);
             // 
-            // Current
+            // Current_L
             // 
-            this.Current.Location = new System.Drawing.Point(12, 39);
-            this.Current.Name = "Current";
-            this.Current.Size = new System.Drawing.Size(166, 20);
-            this.Current.TabIndex = 3;
-            this.Current.Text = "MAC Address Used:";
-            this.Current.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Current_L.BackColor = System.Drawing.Color.Transparent;
+            this.Current_L.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.Current_L.ForeColor = System.Drawing.Color.LightGray;
+            this.Current_L.Location = new System.Drawing.Point(5, 69);
+            this.Current_L.Name = "Current_L";
+            this.Current_L.Size = new System.Drawing.Size(168, 29);
+            this.Current_L.TabIndex = 8;
+            this.Current_L.Text = "MAC Address Used:";
+            this.Current_L.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // New
+            // New_L
             // 
-            this.New.Location = new System.Drawing.Point(12, 64);
-            this.New.Name = "New";
-            this.New.Size = new System.Drawing.Size(166, 20);
-            this.New.TabIndex = 4;
-            this.New.Text = "New MAC Address:";
-            this.New.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.New_L.BackColor = System.Drawing.Color.Transparent;
+            this.New_L.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.New_L.ForeColor = System.Drawing.Color.LightGray;
+            this.New_L.Location = new System.Drawing.Point(5, 104);
+            this.New_L.Name = "New_L";
+            this.New_L.Size = new System.Drawing.Size(168, 29);
+            this.New_L.TabIndex = 10;
+            this.New_L.Text = "New MAC Address:";
+            this.New_L.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Refresh
+            // New_TB
             // 
-            this.Refresh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Refresh.Location = new System.Drawing.Point(302, 39);
-            this.Refresh.Name = "Refresh";
-            this.Refresh.Size = new System.Drawing.Size(75, 20);
-            this.Refresh.TabIndex = 5;
-            this.Refresh.Text = "Refresh";
-            this.Refresh.UseVisualStyleBackColor = true;
-            this.Refresh.Click += new System.EventHandler(this.Refresh_Click);
+            this.New_TB.BackColor = System.Drawing.Color.Transparent;
+            this.New_TB.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
+            this.New_TB.FocusOnHover = false;
+            this.New_TB.Location = new System.Drawing.Point(179, 104);
+            this.New_TB.MaxLength = 12;
+            this.New_TB.Multiline = false;
+            this.New_TB.Name = "New_TB";
+            this.New_TB.ReadOnly = false;
+            this.New_TB.Size = new System.Drawing.Size(110, 29);
+            this.New_TB.TabIndex = 9;
+            this.New_TB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.New_TB.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.New_TB.UseSystemPasswordChar = false;
+            this.New_TB.TextChanged += new System.EventHandler(this.New_TB_TextChanged);
             // 
-            // Summon
+            // Current_TB
             // 
-            this.Summon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Summon.Location = new System.Drawing.Point(302, 64);
-            this.Summon.Name = "Summon";
-            this.Summon.Size = new System.Drawing.Size(75, 20);
-            this.Summon.TabIndex = 6;
-            this.Summon.Text = "Generate";
-            this.Summon.UseVisualStyleBackColor = true;
-            this.Summon.Click += new System.EventHandler(this.Summon_Click);
+            this.Current_TB.BackColor = System.Drawing.Color.Transparent;
+            this.Current_TB.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
+            this.Current_TB.FocusOnHover = false;
+            this.Current_TB.Location = new System.Drawing.Point(179, 69);
+            this.Current_TB.MaxLength = 12;
+            this.Current_TB.Multiline = false;
+            this.Current_TB.Name = "Current_TB";
+            this.Current_TB.ReadOnly = true;
+            this.Current_TB.Size = new System.Drawing.Size(110, 29);
+            this.Current_TB.TabIndex = 7;
+            this.Current_TB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Current_TB.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.Current_TB.UseSystemPasswordChar = false;
             // 
-            // SAVE
+            // Save_B
             // 
-            this.SAVE.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.SAVE.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.SAVE.Enabled = false;
-            this.SAVE.Location = new System.Drawing.Point(100, 90);
-            this.SAVE.Name = "SAVE";
-            this.SAVE.Size = new System.Drawing.Size(88, 35);
-            this.SAVE.TabIndex = 7;
-            this.SAVE.Text = "SAVE";
-            this.SAVE.UseVisualStyleBackColor = true;
-            this.SAVE.Click += new System.EventHandler(this.SAVE_Click);
+            this.Save_B.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(38)))));
+            this.Save_B.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Save_B.ForeColor = System.Drawing.Color.White;
+            this.Save_B.HoverColor = System.Drawing.Color.DodgerBlue;
+            this.Save_B.Image = null;
+            this.Save_B.Location = new System.Drawing.Point(5, 136);
+            this.Save_B.Name = "Save_B";
+            this.Save_B.Size = new System.Drawing.Size(168, 35);
+            this.Save_B.TabIndex = 11;
+            this.Save_B.Text = "SAVE";
+            this.Save_B.Click += new System.EventHandler(this.Save_B_Click);
             // 
-            // BACK
+            // Undo_B
             // 
-            this.BACK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.BACK.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BACK.Location = new System.Drawing.Point(200, 90);
-            this.BACK.Name = "BACK";
-            this.BACK.Size = new System.Drawing.Size(88, 35);
-            this.BACK.TabIndex = 8;
-            this.BACK.Text = "UNDO";
-            this.BACK.UseVisualStyleBackColor = true;
-            this.BACK.Click += new System.EventHandler(this.BACK_Click);
+            this.Undo_B.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(38)))));
+            this.Undo_B.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Undo_B.ForeColor = System.Drawing.Color.White;
+            this.Undo_B.HoverColor = System.Drawing.Color.DodgerBlue;
+            this.Undo_B.Image = null;
+            this.Undo_B.Location = new System.Drawing.Point(231, 139);
+            this.Undo_B.Name = "Undo_B";
+            this.Undo_B.Size = new System.Drawing.Size(168, 35);
+            this.Undo_B.TabIndex = 12;
+            this.Undo_B.Text = "UNDO";
+            this.Undo_B.Click += new System.EventHandler(this.Undo_B_Click);
             // 
-            // Main
+            // MAIN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(388, 137);
-            this.Controls.Add(this.BACK);
-            this.Controls.Add(this.SAVE);
-            this.Controls.Add(this.Summon);
-            this.Controls.Add(this.Refresh);
-            this.Controls.Add(this.New);
-            this.Controls.Add(this.Current);
-            this.Controls.Add(this.NewMAC);
-            this.Controls.Add(this.CurrentMAC);
-            this.Controls.Add(this.Adapters);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(404, 182);
+            this.Controls.Add(this.Undo_B);
+            this.Controls.Add(this.Save_B);
+            this.Controls.Add(this.New_L);
+            this.Controls.Add(this.New_TB);
+            this.Controls.Add(this.Current_L);
+            this.Controls.Add(this.Current_TB);
+            this.Controls.Add(this.Generate_B);
+            this.Controls.Add(this.Refresh_B);
+            this.Controls.Add(this.Adapters_CB);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Image = global::MAChanger.Properties.Resources.Wifi;
             this.MaximizeBox = false;
-            this.Name = "Main";
+            this.Name = "MAIN";
+            this.Sizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MAC Changer v1.2";
-            this.Load += new System.EventHandler(this.Main_Load);
+            this.Text = "MAC Changer v1.3";
+            this.Load += new System.EventHandler(this.MAIN_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox CurrentMAC;
-        private System.Windows.Forms.TextBox NewMAC;
-        private System.Windows.Forms.Label Current;
-        private System.Windows.Forms.Label New;
-        private System.Windows.Forms.Button Refresh;
-        private System.Windows.Forms.Button Summon;
-        private System.Windows.Forms.Button SAVE;
-        private System.Windows.Forms.Button BACK;
-        private System.Windows.Forms.ComboBox Adapters;
+        private ReaLTaiizor.ForeverComboBox Adapters_CB;
+        private ReaLTaiizor.LostAcceptButton Refresh_B;
+        private ReaLTaiizor.LostCancelButton Generate_B;
+        private ReaLTaiizor.ForeverLabel Current_L;
+        private ReaLTaiizor.ForeverLabel New_L;
+        private ReaLTaiizor.ForeverTextBox New_TB;
+        private ReaLTaiizor.ForeverTextBox Current_TB;
+        private ReaLTaiizor.LostButton Save_B;
+        private ReaLTaiizor.LostButton Undo_B;
     }
 }
