@@ -42,7 +42,9 @@
             // 
             // Adapters_CB
             // 
-            this.Adapters_CB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(38)))));
+            this.Adapters_CB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.Adapters_CB.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(27)))), ((int)(((byte)(29)))));
+            this.Adapters_CB.BGColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(37)))), ((int)(((byte)(39)))));
             this.Adapters_CB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Adapters_CB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.Adapters_CB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -62,6 +64,7 @@
             // 
             this.Refresh_B.BackColor = System.Drawing.Color.SeaGreen;
             this.Refresh_B.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Refresh_B.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Refresh_B.ForeColor = System.Drawing.Color.White;
             this.Refresh_B.HoverColor = System.Drawing.Color.ForestGreen;
             this.Refresh_B.Image = null;
@@ -148,6 +151,7 @@
             // 
             this.Save_B.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(38)))));
             this.Save_B.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Save_B.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Save_B.ForeColor = System.Drawing.Color.White;
             this.Save_B.HoverColor = System.Drawing.Color.DodgerBlue;
             this.Save_B.Image = null;
@@ -162,6 +166,7 @@
             // 
             this.Undo_B.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(38)))));
             this.Undo_B.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Undo_B.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Undo_B.ForeColor = System.Drawing.Color.White;
             this.Undo_B.HoverColor = System.Drawing.Color.DodgerBlue;
             this.Undo_B.Image = null;
@@ -174,9 +179,9 @@
             // 
             // MAIN
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.ClientSize = new System.Drawing.Size(404, 182);
             this.Controls.Add(this.Undo_B);
             this.Controls.Add(this.Save_B);
@@ -193,7 +198,7 @@
             this.Name = "MAIN";
             this.Sizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MAC Changer v1.3";
+            this.Text = "MAC Changer v1.4";
             this.Load += new System.EventHandler(this.MAIN_Load);
             this.ResumeLayout(false);
 
