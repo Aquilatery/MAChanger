@@ -58,6 +58,12 @@ namespace MAChanger
                 Save_B.Enabled = Adapter.ControlMAC(New_TB.Text, false) == (Current_TB.Text != New_TB.Text);
         }
 
+        private void New_TB_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (New_TB.Text != New_TB.Text.ToUpper())
+                New_TB.Text = New_TB.Text.Replace(e.KeyCode.ToString().ToLower(), e.KeyCode.ToString());
+        }
+
         private void Save_B_Click(object sender, EventArgs e)
         {
             if (Adapter.ControlMAC(New_TB.Text, false))

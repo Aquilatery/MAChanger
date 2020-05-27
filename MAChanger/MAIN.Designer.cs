@@ -131,6 +131,7 @@
             this.New_TB.TabIndex = 9;
             this.New_TB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.New_TB.UseSystemPasswordChar = false;
+            this.New_TB.KeyUp += new System.Windows.Forms.KeyEventHandler(this.New_TB_KeyUp);
             this.New_TB.TextChanged += new System.EventHandler(this.New_TB_TextChanged);
             // 
             // Current_TB
