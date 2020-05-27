@@ -11,3 +11,4 @@ E:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Release\MAChanger.csproj.Core
 E:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Release\MAChanger.csproj.CopyComplete
 E:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Release\MAChanger.exe
 E:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Release\MAChanger.pdb
+E:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Release\MAChanger.csprojAssemblyReference.cache

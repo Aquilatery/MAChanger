@@ -52,6 +52,7 @@
             this.Adapters_CB.ForeColor = System.Drawing.Color.White;
             this.Adapters_CB.FormattingEnabled = true;
             this.Adapters_CB.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
+            this.Adapters_CB.HoverFontColor = System.Drawing.Color.White;
             this.Adapters_CB.ItemHeight = 18;
             this.Adapters_CB.Location = new System.Drawing.Point(5, 39);
             this.Adapters_CB.MaxDropDownItems = 12;
@@ -117,8 +118,10 @@
             // New_TB
             // 
             this.New_TB.BackColor = System.Drawing.Color.Transparent;
-            this.New_TB.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
+            this.New_TB.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(49)))));
+            this.New_TB.BorderColor = System.Drawing.Color.Crimson;
             this.New_TB.FocusOnHover = false;
+            this.New_TB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.New_TB.Location = new System.Drawing.Point(179, 104);
             this.New_TB.MaxLength = 12;
             this.New_TB.Multiline = false;
@@ -127,15 +130,16 @@
             this.New_TB.Size = new System.Drawing.Size(110, 29);
             this.New_TB.TabIndex = 9;
             this.New_TB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.New_TB.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.New_TB.UseSystemPasswordChar = false;
             this.New_TB.TextChanged += new System.EventHandler(this.New_TB_TextChanged);
             // 
             // Current_TB
             // 
             this.Current_TB.BackColor = System.Drawing.Color.Transparent;
-            this.Current_TB.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
+            this.Current_TB.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(49)))));
+            this.Current_TB.BorderColor = System.Drawing.Color.SeaGreen;
             this.Current_TB.FocusOnHover = false;
+            this.Current_TB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.Current_TB.Location = new System.Drawing.Point(179, 69);
             this.Current_TB.MaxLength = 12;
             this.Current_TB.Multiline = false;
@@ -144,7 +148,6 @@
             this.Current_TB.Size = new System.Drawing.Size(110, 29);
             this.Current_TB.TabIndex = 7;
             this.Current_TB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.Current_TB.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.Current_TB.UseSystemPasswordChar = false;
             // 
             // Save_B
