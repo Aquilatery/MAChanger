@@ -1,7 +1,6 @@
 E:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Release\MAChanger.exe.config
 E:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Release\MAChanger.exe
 E:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Release\MAChanger.pdb
-E:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Release\ReaLTaiizor.dll
 E:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Release\MAChanger.g.resources
 E:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Release\MAChanger.LAST.resources
 E:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Release\MAChanger.MAIN.resources
@@ -12,3 +11,4 @@ E:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Release\MAChanger.csproj.Copy
 E:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Release\MAChanger.exe
 E:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Release\MAChanger.pdb
 E:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Release\MAChanger.csprojAssemblyReference.cache
+E:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Release\ReaLTaiizor.dll
