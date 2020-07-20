@@ -11,7 +11,6 @@ namespace MAChanger
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MAIN());
-            //Application.Run(new LAST());
         }
     }
 }

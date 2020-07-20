@@ -202,7 +202,7 @@
             this.Name = "MAIN";
             this.Sizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MAC Changer v1.4";
+            this.Text = "MAC Changer v1.5";
             this.Load += new System.EventHandler(this.MAIN_Load);
             this.ResumeLayout(false);
 
