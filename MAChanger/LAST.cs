@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Threading;
 using System.Windows.Forms;
 using System.Net.NetworkInformation;
@@ -12,7 +13,7 @@ namespace MAChanger
             InitializeComponent();
         }
 
-        private void LAST_Load(object sender, System.EventArgs e)
+        private void LAST_Load(object sender, EventArgs e)
         {
             foreach (NetworkInterface Adapter in NetworkInterface.GetAllNetworkInterfaces().Where(FA => Adapter.ControlMAC(FA.GetPhysicalAddress().GetAddressBytes(), true)).OrderByDescending(FA => FA.IsReceiveOnly))
                 Adapters.Items.Add(new Adapter(Adapter));
@@ -32,27 +33,27 @@ namespace MAChanger
             SAVE.Enabled = (CurrentMAC.Text != NewMAC.Text);
         }
 
-        private void Refresh_Click(object sender, System.EventArgs e)
+        private void Refresh_Click(object sender, EventArgs e)
         {
             UA();
         }
 
-        private void Adapters_SelectedIndexChanged(object sender, System.EventArgs e)
+        private void Adapters_SelectedIndexChanged(object sender, EventArgs e)
         {
             UA();
         }
 
-        private void Summon_Click(object sender, System.EventArgs e)
+        private void Summon_Click(object sender, EventArgs e)
         {
             NewMAC.Text = Adapter.CreateMAC();
         }
 
-        private void NewMAC_TextChanged(object sender, System.EventArgs e)
+        private void NewMAC_TextChanged(object sender, EventArgs e)
         {
             SAVE.Enabled = (Adapter.ControlMAC(NewMAC.Text, false) == (CurrentMAC.Text != NewMAC.Text));
         }
 
-        private void SAVE_Click(object sender, System.EventArgs e)
+        private void SAVE_Click(object sender, EventArgs e)
         {
             if (Adapter.ControlMAC(NewMAC.Text, false))
                 SetMAC(NewMAC.Text, "Change MAC Address");
@@ -60,7 +61,7 @@ namespace MAChanger
                 MessageBox.Show("The MAC Address Entered is Invalid, It Will Not Be Updated!", "Invalid MAC Address", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
-        private void BACK_Click(object sender, System.EventArgs e)
+        private void BACK_Click(object sender, EventArgs e)
         {
             SetMAC("", "Undo MAC Address");
         }
