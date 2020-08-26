@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Linq;
 using System.Threading;
+using ReaLTaiizor.Forms;
 using System.Windows.Forms;
-using ReaLTaiizor.Forms.Form;
 using System.Net.NetworkInformation;
 
 namespace MAChanger
 {
-    public partial class MAIN : Lost
+    public partial class MAIN : LostForm
     {
         public MAIN()
         {

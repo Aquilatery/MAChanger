@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MAIN));
-            Adapters_CB = new ReaLTaiizor.Controls.ComboBox.ForeverComboBox();
-            Refresh_B = new ReaLTaiizor.Controls.Button.LostAcceptButton();
-            Generate_B = new ReaLTaiizor.Controls.Button.LostCancelButton();
-            Current_L = new ReaLTaiizor.Controls.Label.ForeverLabel();
-            New_L = new ReaLTaiizor.Controls.Label.ForeverLabel();
-            New_TB = new ReaLTaiizor.Controls.TextBox.ForeverTextBox();
-            Current_TB = new ReaLTaiizor.Controls.TextBox.ForeverTextBox();
-            Save_B = new ReaLTaiizor.Controls.Button.LostButton();
-            Undo_B = new ReaLTaiizor.Controls.Button.LostButton();
+            Adapters_CB = new ReaLTaiizor.Controls.ForeverComboBox();
+            Refresh_B = new ReaLTaiizor.Controls.LostAcceptButton();
+            Generate_B = new ReaLTaiizor.Controls.LostCancelButton();
+            Current_L = new ReaLTaiizor.Controls.ForeverLabel();
+            New_L = new ReaLTaiizor.Controls.ForeverLabel();
+            New_TB = new ReaLTaiizor.Controls.ForeverTextBox();
+            Current_TB = new ReaLTaiizor.Controls.ForeverTextBox();
+            Save_B = new ReaLTaiizor.Controls.LostButton();
+            Undo_B = new ReaLTaiizor.Controls.LostButton();
             SuspendLayout();
             // 
             // Adapters_CB
@@ -209,14 +209,14 @@
         }
 
         #endregion
-        private ReaLTaiizor.Controls.ComboBox.ForeverComboBox Adapters_CB;
-        private ReaLTaiizor.Controls.Button.LostAcceptButton Refresh_B;
-        private ReaLTaiizor.Controls.Button.LostCancelButton Generate_B;
-        private ReaLTaiizor.Controls.Label.ForeverLabel Current_L;
-        private ReaLTaiizor.Controls.Label.ForeverLabel New_L;
-        private ReaLTaiizor.Controls.TextBox.ForeverTextBox New_TB;
-        private ReaLTaiizor.Controls.TextBox.ForeverTextBox Current_TB;
-        private ReaLTaiizor.Controls.Button.LostButton Save_B;
-        private ReaLTaiizor.Controls.Button.LostButton Undo_B;
+        private ReaLTaiizor.Controls.ForeverComboBox Adapters_CB;
+        private ReaLTaiizor.Controls.LostAcceptButton Refresh_B;
+        private ReaLTaiizor.Controls.LostCancelButton Generate_B;
+        private ReaLTaiizor.Controls.ForeverLabel Current_L;
+        private ReaLTaiizor.Controls.ForeverLabel New_L;
+        private ReaLTaiizor.Controls.ForeverTextBox New_TB;
+        private ReaLTaiizor.Controls.ForeverTextBox Current_TB;
+        private ReaLTaiizor.Controls.LostButton Save_B;
+        private ReaLTaiizor.Controls.LostButton Undo_B;
     }
 }
