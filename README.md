@@ -2,8 +2,8 @@
   <p>MAChanger v1.5</p>
   <p>Visual Studio 2019</p>
   <p>.NET Framework 4.8 (Minimum 4.0)</p>
-  <img src="https://www.photo.herominyum.com/resimler/2020/05/28/dkn2.png" />
-  <img src="https://www.photo.herominyum.com/resimler/2020/05/28/dnrY.png" />
-  <img src="https://www.photo.herominyum.com/resimler/2020/05/23/OU4C.png" />
-  <img src="https://www.photo.herominyum.com/resimler/2020/05/22/Oufc.png" />
-  <img src="https://www.photo.herominyum.com/resimler/2020/05/23/OfKD.png" />
+  <img src="https://raw.githubusercontent.com/Taiizor/MAChanger/master/.screenshots/UI_1.png" />
+  <img src="https://raw.githubusercontent.com/Taiizor/MAChanger/master/.screenshots/UI_2.png" />
+  <img src="https://raw.githubusercontent.com/Taiizor/MAChanger/master/.screenshots/UI_3.png" />
+  <img src="https://raw.githubusercontent.com/Taiizor/MAChanger/master/.screenshots/UI_4.png" />
+  <img src="https://raw.githubusercontent.com/Taiizor/MAChanger/master/.screenshots/UI_5.png" />
