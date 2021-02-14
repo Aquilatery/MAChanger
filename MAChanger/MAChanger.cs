@@ -3,10 +3,10 @@ using System.Windows.Forms;
 
 namespace MAChanger
 {
-    static class MAChanger
+    internal static class MAChanger
     {
         [STAThread]
-        static void Main()
+        private static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

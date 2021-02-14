@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Threading;
 using System.Windows.Forms;
-using System.Net.NetworkInformation;
 
 namespace MAChanger
 {
@@ -16,10 +16,14 @@ namespace MAChanger
         private void LAST_Load(object sender, EventArgs e)
         {
             foreach (NetworkInterface Adapter in NetworkInterface.GetAllNetworkInterfaces().Where(FA => Adapter.ControlMAC(FA.GetPhysicalAddress().GetAddressBytes(), true)).OrderByDescending(FA => FA.IsReceiveOnly))
+            {
                 Adapters.Items.Add(new Adapter(Adapter));
+            }
 
             if (Adapters.Items.Count > 0)
+            {
                 Adapters.SelectedIndex = Adapters.Items.Count - 1;
+            }
         }
 
         public void UA()
@@ -27,9 +31,14 @@ namespace MAChanger
             Adapter MAC = Adapters.SelectedItem as Adapter;
             CurrentMAC.Text = MAC.GMAC;
             if (!string.IsNullOrEmpty(MAC.RegistryMAC))
+            {
                 NewMAC.Text = MAC.RegistryMAC;
+            }
             else
+            {
                 NewMAC.Text = CurrentMAC.Text;
+            }
+
             SAVE.Enabled = (CurrentMAC.Text != NewMAC.Text);
         }
 
@@ -56,9 +65,13 @@ namespace MAChanger
         private void SAVE_Click(object sender, EventArgs e)
         {
             if (Adapter.ControlMAC(NewMAC.Text, false))
+            {
                 SetMAC(NewMAC.Text, "Change MAC Address");
+            }
             else
+            {
                 MessageBox.Show("The MAC Address Entered is Invalid, It Will Not Be Updated!", "Invalid MAC Address", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void BACK_Click(object sender, EventArgs e)

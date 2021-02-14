@@ -1,10 +1,10 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Linq;
-using Microsoft.Win32;
 using System.Management;
-using System.Windows.Forms;
 using System.Net.NetworkInformation;
 using System.Text.RegularExpressions;
+using System.Windows.Forms;
 
 namespace MAChanger
 {
@@ -29,13 +29,13 @@ namespace MAChanger
         {
             AdapterName = AName;
 
-            var Searcher = new ManagementObjectSearcher("SELECT * FROM Win32_NetworkAdapter WHERE Name='" + AdapterName + "'");
-            var Found = Searcher.Get();
+            ManagementObjectSearcher Searcher = new ManagementObjectSearcher("SELECT * FROM Win32_NetworkAdapter WHERE Name='" + AdapterName + "'");
+            ManagementObjectCollection Found = Searcher.Get();
             VAdapter = Found.Cast<ManagementObject>().FirstOrDefault();
 
             try
             {
-                var Match = Regex.Match(VAdapter.Path.RelativePath, "\\\"(\\d+)\\\"$");
+                Match Match = Regex.Match(VAdapter.Path.RelativePath, "\\\"(\\d+)\\\"$");
                 DevNum = int.Parse(Match.Groups[1].Value);
             }
             catch
@@ -46,13 +46,7 @@ namespace MAChanger
             CustomName = NetworkInterface.GetAllNetworkInterfaces().Where(o => o.Description == AdapterName).Select(o => " (" + o.Name + ")").FirstOrDefault();
         }
 
-        private NetworkInterface ManagedAdapter
-        {
-            get
-            {
-                return NetworkInterface.GetAllNetworkInterfaces().Where(ANI => ANI.Description == AdapterName).FirstOrDefault();
-            }
-        }
+        private NetworkInterface ManagedAdapter => NetworkInterface.GetAllNetworkInterfaces().Where(ANI => ANI.Description == AdapterName).FirstOrDefault();
 
         public string GMAC
         {
@@ -69,13 +63,7 @@ namespace MAChanger
             }
         }
 
-        private string RegistryKey
-        {
-            get
-            {
-                return String.Format(@"SYSTEM\ControlSet001\Control\Class\{{4D36E972-E325-11CE-BFC1-08002BE10318}}\{0:D4}", DevNum);
-            }
-        }
+        private string RegistryKey => string.Format(@"SYSTEM\ControlSet001\Control\Class\{{4D36E972-E325-11CE-BFC1-08002BE10318}}\{0:D4}", DevNum);
 
         public string RegistryMAC
         {
@@ -84,7 +72,9 @@ namespace MAChanger
                 try
                 {
                     using (RegistryKey RegKey = Registry.LocalMachine.OpenSubKey(RegistryKey, false))
+                    {
                         return RegKey.GetValue("NetworkAddress").ToString();
+                    }
                 }
                 catch
                 {
@@ -99,34 +89,48 @@ namespace MAChanger
             try
             {
                 if (Value.Length > 0 && !ControlMAC(Value, false))
+                {
                     throw new Exception(Value + " Is Not a Valid MAC Address!");
+                }
                 else
                 {
                     using (RegistryKey RegKey = Registry.LocalMachine.OpenSubKey(RegistryKey, true))
                     {
                         if (RegKey == null)
+                        {
                             throw new Exception("Registry Key Could Not Be Opened!");
+                        }
                         else if (RegKey.GetValue("AdapterModel") as string != AdapterName && RegKey.GetValue("DriverDesc") as string != AdapterName)
+                        {
                             throw new Exception("Adapter Not Found in Registry!");
+                        }
                         else
                         {
                             string Question = Value.Length > 0 ? "MAC Address of Adapter {0}: {1}\nChange New MAC Address To {2}?" : "Retract MAC Address Settings of Adapter {0}?";
-                            DialogResult Proceed = MessageBox.Show(String.Format(Question, ToString(), GMAC, Value), Title, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                            DialogResult Proceed = MessageBox.Show(string.Format(Question, ToString(), GMAC, Value), Title, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                             if (Proceed != DialogResult.Yes)
+                            {
                                 return false;
+                            }
                             else
                             {
-                                var Result = (uint)VAdapter.InvokeMethod("Disable", null);
+                                uint Result = (uint)VAdapter.InvokeMethod("Disable", null);
                                 if (Result != 0)
+                                {
                                     throw new Exception("Adapter Could Not Be Disabled!");
+                                }
                                 else
                                 {
                                     ShouldReenable = true;
 
                                     if (Value.Length > 0)
+                                    {
                                         RegKey.SetValue("NetworkAddress", Value, RegistryValueKind.String);
+                                    }
                                     else if (!string.IsNullOrEmpty(RegKey.GetValue("NetworkAddress") as string))
+                                    {
                                         RegKey.DeleteValue("NetworkAddress");
+                                    }
 
                                     return true;
                                 }
@@ -146,7 +150,9 @@ namespace MAChanger
                 {
                     uint Result = (uint)VAdapter.InvokeMethod("Enable", null);
                     if (Result != 0)
+                    {
                         MessageBox.Show("Adapter Could Not Be Reactivated!");
+                    }
                 }
             }
         }
@@ -172,13 +178,21 @@ namespace MAChanger
         public static bool ControlMAC(string MAC, bool Actual)
         {
             if (MAC.Length != 12)
+            {
                 return false;
+            }
             else if (MAC != MAC.ToUpper())
+            {
                 return false;
+            }
             else if (!Regex.IsMatch(MAC, "^[0-9A-F]*$"))
+            {
                 return false;
+            }
             else if (Actual)
+            {
                 return true;
+            }
             else
             {
                 char C = MAC[1];

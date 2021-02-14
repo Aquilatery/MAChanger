@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Taiizor")]
 [assembly: AssemblyProduct("MAChanger")]
-[assembly: AssemblyCopyright("Copyright © 2020 Taiizor")]
+[assembly: AssemblyCopyright("Copyright © 2021 Taiizor")]
 [assembly: AssemblyTrademark("Taiizor")]
 [assembly: AssemblyCulture("")]
 
