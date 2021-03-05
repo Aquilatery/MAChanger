@@ -10,6 +10,9 @@ namespace MAChanger
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+#if NET5_0 || NET6_0
+            Application.SetHighDpiMode(HighDpiMode.SystemAware);
+#endif
             Application.Run(new MAIN());
         }
     }

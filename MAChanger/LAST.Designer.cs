@@ -18,142 +18,142 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LAST));
-            Adapters = new System.Windows.Forms.ComboBox();
-            CurrentMAC = new System.Windows.Forms.TextBox();
-            NewMAC = new System.Windows.Forms.TextBox();
-            Current = new System.Windows.Forms.Label();
-            New = new System.Windows.Forms.Label();
-            Refresh = new System.Windows.Forms.Button();
-            Summon = new System.Windows.Forms.Button();
-            SAVE = new System.Windows.Forms.Button();
-            BACK = new System.Windows.Forms.Button();
-            SuspendLayout();
+            this.Adapters = new System.Windows.Forms.ComboBox();
+            this.CurrentMAC = new System.Windows.Forms.TextBox();
+            this.NewMAC = new System.Windows.Forms.TextBox();
+            this.Current = new System.Windows.Forms.Label();
+            this.New = new System.Windows.Forms.Label();
+            this.Refresh = new System.Windows.Forms.Button();
+            this.Summon = new System.Windows.Forms.Button();
+            this.SAVE = new System.Windows.Forms.Button();
+            this.BACK = new System.Windows.Forms.Button();
+            this.SuspendLayout();
             // 
             // Adapters
             // 
-            Adapters.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Adapters.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            Adapters.Cursor = System.Windows.Forms.Cursors.Hand;
-            Adapters.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            Adapters.FormattingEnabled = true;
-            Adapters.Location = new System.Drawing.Point(12, 12);
-            Adapters.Name = "Adapters";
-            Adapters.Size = new System.Drawing.Size(364, 21);
-            Adapters.TabIndex = 0;
-            Adapters.SelectedIndexChanged += new System.EventHandler(Adapters_SelectedIndexChanged);
+            this.Adapters.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Adapters.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Adapters.FormattingEnabled = true;
+            this.Adapters.Location = new System.Drawing.Point(12, 12);
+            this.Adapters.Name = "Adapters";
+            this.Adapters.Size = new System.Drawing.Size(364, 21);
+            this.Adapters.TabIndex = 0;
+            this.Adapters.SelectedIndexChanged += new System.EventHandler(this.Adapters_SelectedIndexChanged);
             // 
             // CurrentMAC
             // 
-            CurrentMAC.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            CurrentMAC.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            CurrentMAC.Location = new System.Drawing.Point(185, 39);
-            CurrentMAC.MaxLength = 12;
-            CurrentMAC.Name = "CurrentMAC";
-            CurrentMAC.ReadOnly = true;
-            CurrentMAC.Size = new System.Drawing.Size(110, 20);
-            CurrentMAC.TabIndex = 1;
-            CurrentMAC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.CurrentMAC.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.CurrentMAC.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.CurrentMAC.Location = new System.Drawing.Point(185, 39);
+            this.CurrentMAC.MaxLength = 12;
+            this.CurrentMAC.Name = "CurrentMAC";
+            this.CurrentMAC.ReadOnly = true;
+            this.CurrentMAC.Size = new System.Drawing.Size(110, 20);
+            this.CurrentMAC.TabIndex = 1;
+            this.CurrentMAC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // NewMAC
             // 
-            NewMAC.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            NewMAC.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            NewMAC.Location = new System.Drawing.Point(185, 64);
-            NewMAC.MaxLength = 12;
-            NewMAC.Name = "NewMAC";
-            NewMAC.Size = new System.Drawing.Size(110, 20);
-            NewMAC.TabIndex = 2;
-            NewMAC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            NewMAC.TextChanged += new System.EventHandler(NewMAC_TextChanged);
+            this.NewMAC.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NewMAC.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.NewMAC.Location = new System.Drawing.Point(185, 64);
+            this.NewMAC.MaxLength = 12;
+            this.NewMAC.Name = "NewMAC";
+            this.NewMAC.Size = new System.Drawing.Size(110, 20);
+            this.NewMAC.TabIndex = 2;
+            this.NewMAC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.NewMAC.TextChanged += new System.EventHandler(this.NewMAC_TextChanged);
             // 
             // Current
             // 
-            Current.Location = new System.Drawing.Point(12, 39);
-            Current.Name = "Current";
-            Current.Size = new System.Drawing.Size(166, 20);
-            Current.TabIndex = 3;
-            Current.Text = "MAC Address Used:";
-            Current.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Current.Location = new System.Drawing.Point(12, 39);
+            this.Current.Name = "Current";
+            this.Current.Size = new System.Drawing.Size(166, 20);
+            this.Current.TabIndex = 3;
+            this.Current.Text = "MAC Address Used:";
+            this.Current.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // New
             // 
-            New.Location = new System.Drawing.Point(12, 64);
-            New.Name = "New";
-            New.Size = new System.Drawing.Size(166, 20);
-            New.TabIndex = 4;
-            New.Text = "New MAC Address:";
-            New.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.New.Location = new System.Drawing.Point(12, 64);
+            this.New.Name = "New";
+            this.New.Size = new System.Drawing.Size(166, 20);
+            this.New.TabIndex = 4;
+            this.New.Text = "New MAC Address:";
+            this.New.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Refresh
             // 
-            Refresh.Cursor = System.Windows.Forms.Cursors.Hand;
-            Refresh.Location = new System.Drawing.Point(302, 39);
-            Refresh.Name = "Refresh";
-            Refresh.Size = new System.Drawing.Size(75, 20);
-            Refresh.TabIndex = 5;
-            Refresh.Text = "Refresh";
-            Refresh.UseVisualStyleBackColor = true;
-            Refresh.Click += new System.EventHandler(Refresh_Click);
+            this.Refresh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Refresh.Location = new System.Drawing.Point(302, 39);
+            this.Refresh.Name = "Refresh";
+            this.Refresh.Size = new System.Drawing.Size(75, 20);
+            this.Refresh.TabIndex = 5;
+            this.Refresh.Text = "Refresh";
+            this.Refresh.UseVisualStyleBackColor = true;
+            this.Refresh.Click += new System.EventHandler(this.Refresh_Click);
             // 
             // Summon
             // 
-            Summon.Cursor = System.Windows.Forms.Cursors.Hand;
-            Summon.Location = new System.Drawing.Point(302, 64);
-            Summon.Name = "Summon";
-            Summon.Size = new System.Drawing.Size(75, 20);
-            Summon.TabIndex = 6;
-            Summon.Text = "Generate";
-            Summon.UseVisualStyleBackColor = true;
-            Summon.Click += new System.EventHandler(Summon_Click);
+            this.Summon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Summon.Location = new System.Drawing.Point(302, 64);
+            this.Summon.Name = "Summon";
+            this.Summon.Size = new System.Drawing.Size(75, 20);
+            this.Summon.TabIndex = 6;
+            this.Summon.Text = "Generate";
+            this.Summon.UseVisualStyleBackColor = true;
+            this.Summon.Click += new System.EventHandler(this.Summon_Click);
             // 
             // SAVE
             // 
-            SAVE.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            SAVE.Cursor = System.Windows.Forms.Cursors.Hand;
-            SAVE.Enabled = false;
-            SAVE.Location = new System.Drawing.Point(100, 90);
-            SAVE.Name = "SAVE";
-            SAVE.Size = new System.Drawing.Size(88, 35);
-            SAVE.TabIndex = 7;
-            SAVE.Text = "SAVE";
-            SAVE.UseVisualStyleBackColor = true;
-            SAVE.Click += new System.EventHandler(SAVE_Click);
+            this.SAVE.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.SAVE.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SAVE.Enabled = false;
+            this.SAVE.Location = new System.Drawing.Point(100, 90);
+            this.SAVE.Name = "SAVE";
+            this.SAVE.Size = new System.Drawing.Size(88, 35);
+            this.SAVE.TabIndex = 7;
+            this.SAVE.Text = "SAVE";
+            this.SAVE.UseVisualStyleBackColor = true;
+            this.SAVE.Click += new System.EventHandler(this.SAVE_Click);
             // 
             // BACK
             // 
-            BACK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            BACK.Cursor = System.Windows.Forms.Cursors.Hand;
-            BACK.Location = new System.Drawing.Point(200, 90);
-            BACK.Name = "BACK";
-            BACK.Size = new System.Drawing.Size(88, 35);
-            BACK.TabIndex = 8;
-            BACK.Text = "UNDO";
-            BACK.UseVisualStyleBackColor = true;
-            BACK.Click += new System.EventHandler(BACK_Click);
+            this.BACK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BACK.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BACK.Location = new System.Drawing.Point(200, 90);
+            this.BACK.Name = "BACK";
+            this.BACK.Size = new System.Drawing.Size(88, 35);
+            this.BACK.TabIndex = 8;
+            this.BACK.Text = "UNDO";
+            this.BACK.UseVisualStyleBackColor = true;
+            this.BACK.Click += new System.EventHandler(this.BACK_Click);
             // 
             // LAST
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(388, 137);
-            Controls.Add(BACK);
-            Controls.Add(SAVE);
-            Controls.Add(Summon);
-            Controls.Add(Refresh);
-            Controls.Add(New);
-            Controls.Add(Current);
-            Controls.Add(NewMAC);
-            Controls.Add(CurrentMAC);
-            Controls.Add(Adapters);
-            FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            Icon = ((System.Drawing.Icon)(resources.GetObject("$Icon")));
-            MaximizeBox = false;
-            Name = "LAST";
-            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            Text = "MAC Changer v1.2";
-            Load += new System.EventHandler(LAST_Load);
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.ClientSize = new System.Drawing.Size(388, 137);
+            this.Controls.Add(this.BACK);
+            this.Controls.Add(this.SAVE);
+            this.Controls.Add(this.Summon);
+            this.Controls.Add(this.Refresh);
+            this.Controls.Add(this.New);
+            this.Controls.Add(this.Current);
+            this.Controls.Add(this.NewMAC);
+            this.Controls.Add(this.CurrentMAC);
+            this.Controls.Add(this.Adapters);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.Name = "LAST";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "MAC Changer v1.2";
+            this.Load += new System.EventHandler(this.LAST_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

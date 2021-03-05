@@ -1,0 +1,220 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "MAChanger/1.0.0": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "Microsoft.VisualBasic": "10.4.0-preview.18571.3",
+          "ReaLTaiizor": "3.7.8.2",
+          "System.Management": "6.0.0-preview.1.21102.12"
+        },
+        "runtime": {
+          "MAChanger.dll": {}
+        }
+      },
+      "Microsoft.CSharp/4.7.0": {},
+      "Microsoft.NETCore.Platforms/6.0.0-preview.1.21102.12": {},
+      "Microsoft.VisualBasic/10.4.0-preview.18571.3": {},
+      "Microsoft.Win32.Registry/6.0.0-preview.1.21102.12": {
+        "dependencies": {
+          "System.Security.AccessControl": "6.0.0-preview.1.21102.12",
+          "System.Security.Principal.Windows": "6.0.0-preview.1.21102.12"
+        }
+      },
+      "Microsoft.Win32.SystemEvents/5.0.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "6.0.0-preview.1.21102.12"
+        }
+      },
+      "ReaLTaiizor/3.7.8.2": {
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "5.0.0",
+          "System.Drawing.Common": "5.0.1",
+          "System.Resources.Extensions": "5.0.0"
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/ReaLTaiizor.dll": {
+            "assemblyVersion": "3.7.8.2",
+            "fileVersion": "3.7.8.2"
+          }
+        }
+      },
+      "System.CodeDom/6.0.0-preview.1.21102.12": {},
+      "System.Configuration.ConfigurationManager/5.0.0": {
+        "dependencies": {
+          "System.Security.Cryptography.ProtectedData": "5.0.0",
+          "System.Security.Permissions": "5.0.0"
+        }
+      },
+      "System.Drawing.Common/5.0.1": {
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "5.0.0"
+        }
+      },
+      "System.Management/6.0.0-preview.1.21102.12": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "6.0.0-preview.1.21102.12",
+          "Microsoft.Win32.Registry": "6.0.0-preview.1.21102.12",
+          "System.CodeDom": "6.0.0-preview.1.21102.12"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Management.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "6.0.21.10212"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp2.0/System.Management.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "6.0.21.10212"
+          }
+        }
+      },
+      "System.Resources.Extensions/5.0.0": {},
+      "System.Security.AccessControl/6.0.0-preview.1.21102.12": {
+        "dependencies": {
+          "System.Security.Principal.Windows": "6.0.0-preview.1.21102.12"
+        }
+      },
+      "System.Security.Cryptography.ProtectedData/5.0.0": {},
+      "System.Security.Permissions/5.0.0": {
+        "dependencies": {
+          "System.Security.AccessControl": "6.0.0-preview.1.21102.12",
+          "System.Windows.Extensions": "5.0.0"
+        }
+      },
+      "System.Security.Principal.Windows/6.0.0-preview.1.21102.12": {},
+      "System.Windows.Extensions/5.0.0": {
+        "dependencies": {
+          "System.Drawing.Common": "5.0.1"
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MAChanger/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.CSharp/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "path": "microsoft.csharp/4.7.0",
+      "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/6.0.0-preview.1.21102.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mdF/p3nqdGOOzMGSiO1nf6M0/LmJziyfDW1H16TYwZvj++4+bC4VzH7BEUyX8IjcXJCxvO2uTfym/ZeNJVGthA==",
+      "path": "microsoft.netcore.platforms/6.0.0-preview.1.21102.12",
+      "hashPath": "microsoft.netcore.platforms.6.0.0-preview.1.21102.12.nupkg.sha512"
+    },
+    "Microsoft.VisualBasic/10.4.0-preview.18571.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9o+ngDFh/65nEtLaMJ4I7nsMFqTYStbMzdp0gX0ytOFs77WrCNMoEEt72fRHvDbcPXmFD/+UF6LOPqEdcU//0Q==",
+      "path": "microsoft.visualbasic/10.4.0-preview.18571.3",
+      "hashPath": "microsoft.visualbasic.10.4.0-preview.18571.3.nupkg.sha512"
+    },
+    "Microsoft.Win32.Registry/6.0.0-preview.1.21102.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-J95AsOzp0ZeBOQgTUMqzavcVhuKx+rMGtmKASwnZGa/GPT+Jknk9Q0vSvznZNrb+hrIxlhxXzXug2Lx3NtbEkw==",
+      "path": "microsoft.win32.registry/6.0.0-preview.1.21102.12",
+      "hashPath": "microsoft.win32.registry.6.0.0-preview.1.21102.12.nupkg.sha512"
+    },
+    "Microsoft.Win32.SystemEvents/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Bh6blKG8VAKvXiLe2L+sEsn62nc1Ij34MrNxepD2OCrS5cpCwQa9MeLyhVQPQ/R4Wlzwuy6wMK8hLb11QPDRsQ==",
+      "path": "microsoft.win32.systemevents/5.0.0",
+      "hashPath": "microsoft.win32.systemevents.5.0.0.nupkg.sha512"
+    },
+    "ReaLTaiizor/3.7.8.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-w/7R8ICzpOa+KEwlxSxP2dzy2lc3yjiSspjrSsXsDG8jm+rK8eVAr5LBcmPeaogkzA1yVfmgFgHbtoXFILKv4A==",
+      "path": "realtaiizor/3.7.8.2",
+      "hashPath": "realtaiizor.3.7.8.2.nupkg.sha512"
+    },
+    "System.CodeDom/6.0.0-preview.1.21102.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xXaCJThmb2PCdRunsbK0o5giR5kkIdlzNNpwmwHrjy6PXmRkxBXswRBpKFpuaewiv7u/eTw5nTsZUMyUEGhTYA==",
+      "path": "system.codedom/6.0.0-preview.1.21102.12",
+      "hashPath": "system.codedom.6.0.0-preview.1.21102.12.nupkg.sha512"
+    },
+    "System.Configuration.ConfigurationManager/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aM7cbfEfVNlEEOj3DsZP+2g9NRwbkyiAv2isQEzw7pnkDg9ekCU2m1cdJLM02Uq691OaCS91tooaxcEn8d0q5w==",
+      "path": "system.configuration.configurationmanager/5.0.0",
+      "hashPath": "system.configuration.configurationmanager.5.0.0.nupkg.sha512"
+    },
+    "System.Drawing.Common/5.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3IN8zWk395Qu+7wnoTbebEjdP3izZBBKAahgWuC0jp9tCgTdUFN6KsrqQl0I3L+ptZD/LvwKjgFp1u+x3+p+DA==",
+      "path": "system.drawing.common/5.0.1",
+      "hashPath": "system.drawing.common.5.0.1.nupkg.sha512"
+    },
+    "System.Management/6.0.0-preview.1.21102.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yVySvnvaOpc8Y6YW0b6/q2gij3nOsgC38Z8L2cEN3SuCbBLREngaUGG4GjVbd3Pjt6+RSE3TkJe8qgDp2dokIg==",
+      "path": "system.management/6.0.0-preview.1.21102.12",
+      "hashPath": "system.management.6.0.0-preview.1.21102.12.nupkg.sha512"
+    },
+    "System.Resources.Extensions/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KBiqY/+W6hWVwucHBHO76JkgBGyawlxCcP946MhK8dNjalaBgZkyHaux8ko58PENTqQHHjoDa7cfIkAchfJPPA==",
+      "path": "system.resources.extensions/5.0.0",
+      "hashPath": "system.resources.extensions.5.0.0.nupkg.sha512"
+    },
+    "System.Security.AccessControl/6.0.0-preview.1.21102.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ktolUj5qAMDdgrNVKz572ljuhSFFsHUBrWajl1n8o3NuNxh8tZaBf/QFOShI6m9w910uHv7BFBr3KD5A/6CpsA==",
+      "path": "system.security.accesscontrol/6.0.0-preview.1.21102.12",
+      "hashPath": "system.security.accesscontrol.6.0.0-preview.1.21102.12.nupkg.sha512"
+    },
+    "System.Security.Cryptography.ProtectedData/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HGxMSAFAPLNoxBvSfW08vHde0F9uh7BjASwu6JF9JnXuEPhCY3YUqURn0+bQV/4UWeaqymmrHWV+Aw9riQCtCA==",
+      "path": "system.security.cryptography.protecteddata/5.0.0",
+      "hashPath": "system.security.cryptography.protecteddata.5.0.0.nupkg.sha512"
+    },
+    "System.Security.Permissions/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uE8juAhEkp7KDBCdjDIE3H9R1HJuEHqeqX8nLX9gmYKWwsqk3T5qZlPx8qle5DPKimC/Fy3AFTdV7HamgCh9qQ==",
+      "path": "system.security.permissions/5.0.0",
+      "hashPath": "system.security.permissions.5.0.0.nupkg.sha512"
+    },
+    "System.Security.Principal.Windows/6.0.0-preview.1.21102.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2QE5BJwp0SHC6KAb/NYf6HzaVXN3oqEIe+JYiwCNuF8mcOb81WOc1XP5i8LmqAcTFrMlF41fi+JVgnV3w/n13A==",
+      "path": "system.security.principal.windows/6.0.0-preview.1.21102.12",
+      "hashPath": "system.security.principal.windows.6.0.0-preview.1.21102.12.nupkg.sha512"
+    },
+    "System.Windows.Extensions/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-c1ho9WU9ZxMZawML+ssPKZfdnrg/OjR3pe0m9v8230z3acqphwvPJqzAkH54xRYm5ntZHGG1EPP3sux9H3qSPg==",
+      "path": "system.windows.extensions/5.0.0",
+      "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
+    }
+  }
+}

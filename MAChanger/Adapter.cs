@@ -29,7 +29,7 @@ namespace MAChanger
         {
             AdapterName = AName;
 
-            ManagementObjectSearcher Searcher = new ManagementObjectSearcher("SELECT * FROM Win32_NetworkAdapter WHERE Name='" + AdapterName + "'");
+            ManagementObjectSearcher Searcher = new("SELECT * FROM Win32_NetworkAdapter WHERE Name='" + AdapterName + "'");
             ManagementObjectCollection Found = Searcher.Get();
             VAdapter = Found.Cast<ManagementObject>().FirstOrDefault();
 
@@ -71,10 +71,8 @@ namespace MAChanger
             {
                 try
                 {
-                    using (RegistryKey RegKey = Registry.LocalMachine.OpenSubKey(RegistryKey, false))
-                    {
-                        return RegKey.GetValue("NetworkAddress").ToString();
-                    }
+                    using RegistryKey RegKey = Registry.LocalMachine.OpenSubKey(RegistryKey, false);
+                    return RegKey.GetValue("NetworkAddress").ToString();
                 }
                 catch
                 {
@@ -94,46 +92,44 @@ namespace MAChanger
                 }
                 else
                 {
-                    using (RegistryKey RegKey = Registry.LocalMachine.OpenSubKey(RegistryKey, true))
+                    using RegistryKey RegKey = Registry.LocalMachine.OpenSubKey(RegistryKey, true);
+                    if (RegKey == null)
                     {
-                        if (RegKey == null)
+                        throw new Exception("Registry Key Could Not Be Opened!");
+                    }
+                    else if (RegKey.GetValue("AdapterModel") as string != AdapterName && RegKey.GetValue("DriverDesc") as string != AdapterName)
+                    {
+                        throw new Exception("Adapter Not Found in Registry!");
+                    }
+                    else
+                    {
+                        string Question = Value.Length > 0 ? "MAC Address of Adapter {0}: {1}\nChange New MAC Address To {2}?" : "Retract MAC Address Settings of Adapter {0}?";
+                        DialogResult Proceed = MessageBox.Show(string.Format(Question, ToString(), GMAC, Value), Title, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (Proceed != DialogResult.Yes)
                         {
-                            throw new Exception("Registry Key Could Not Be Opened!");
-                        }
-                        else if (RegKey.GetValue("AdapterModel") as string != AdapterName && RegKey.GetValue("DriverDesc") as string != AdapterName)
-                        {
-                            throw new Exception("Adapter Not Found in Registry!");
+                            return false;
                         }
                         else
                         {
-                            string Question = Value.Length > 0 ? "MAC Address of Adapter {0}: {1}\nChange New MAC Address To {2}?" : "Retract MAC Address Settings of Adapter {0}?";
-                            DialogResult Proceed = MessageBox.Show(string.Format(Question, ToString(), GMAC, Value), Title, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                            if (Proceed != DialogResult.Yes)
+                            uint Result = (uint)VAdapter.InvokeMethod("Disable", null);
+                            if (Result != 0)
                             {
-                                return false;
+                                throw new Exception("Adapter Could Not Be Disabled!");
                             }
                             else
                             {
-                                uint Result = (uint)VAdapter.InvokeMethod("Disable", null);
-                                if (Result != 0)
-                                {
-                                    throw new Exception("Adapter Could Not Be Disabled!");
-                                }
-                                else
-                                {
-                                    ShouldReenable = true;
+                                ShouldReenable = true;
 
-                                    if (Value.Length > 0)
-                                    {
-                                        RegKey.SetValue("NetworkAddress", Value, RegistryValueKind.String);
-                                    }
-                                    else if (!string.IsNullOrEmpty(RegKey.GetValue("NetworkAddress") as string))
-                                    {
-                                        RegKey.DeleteValue("NetworkAddress");
-                                    }
-
-                                    return true;
+                                if (Value.Length > 0)
+                                {
+                                    RegKey.SetValue("NetworkAddress", Value, RegistryValueKind.String);
                                 }
+                                else if (!string.IsNullOrEmpty(RegKey.GetValue("NetworkAddress") as string))
+                                {
+                                    RegKey.DeleteValue("NetworkAddress");
+                                }
+
+                                return true;
                             }
                         }
                     }
@@ -164,7 +160,7 @@ namespace MAChanger
 
         public static string CreateMAC()
         {
-            Random RM = new Random();
+            Random RM = new();
 
             byte[] Bytes = new byte[6];
             RM.NextBytes(Bytes);
