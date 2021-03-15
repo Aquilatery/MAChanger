@@ -9,13 +9,10 @@ G:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Release\net5.0-windows\MAChan
 G:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Release\net5.0-windows\Microsoft.Win32.Registry.dll
 G:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Release\net5.0-windows\ReaLTaiizor.dll
 G:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Release\net5.0-windows\System.CodeDom.dll
-G:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Release\net5.0-windows\System.Drawing.Common.dll
 G:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Release\net5.0-windows\System.Management.dll
 G:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Release\net5.0-windows\System.Security.AccessControl.dll
 G:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Release\net5.0-windows\System.Security.Principal.Windows.dll
 G:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Release\net5.0-windows\runtimes\win\lib\netstandard2.0\Microsoft.Win32.Registry.dll
-G:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Release\net5.0-windows\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
-G:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Release\net5.0-windows\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 G:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Release\net5.0-windows\runtimes\win\lib\netcoreapp2.0\System.Management.dll
 G:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Release\net5.0-windows\runtimes\win\lib\netstandard2.0\System.Security.AccessControl.dll
 G:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Release\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll

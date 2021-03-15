@@ -68,7 +68,7 @@
             },
             "ReaLTaiizor": {
               "target": "Package",
-              "version": "[3.7.8.2, )"
+              "version": "[3.7.8.3, )"
             },
             "System.Management": {
               "target": "Package",
@@ -85,6 +85,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[5.0.3, 5.0.3]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -93,7 +99,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.1.21103.13\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.2.21155.3\\RuntimeIdentifierGraph.json"
         },
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
@@ -108,7 +114,7 @@
             },
             "ReaLTaiizor": {
               "target": "Package",
-              "version": "[3.7.8.2, )"
+              "version": "[3.7.8.3, )"
             },
             "System.Management": {
               "target": "Package",
@@ -133,7 +139,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.1.21103.13\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.2.21155.3\\RuntimeIdentifierGraph.json"
         },
         "net48": {
           "targetAlias": "net48",
@@ -148,14 +154,14 @@
             },
             "ReaLTaiizor": {
               "target": "Package",
-              "version": "[3.7.8.2, )"
+              "version": "[3.7.8.3, )"
             },
             "System.Management": {
               "target": "Package",
               "version": "[6.0.0-preview.1.21102.12, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.1.21103.13\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.2.21155.3\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

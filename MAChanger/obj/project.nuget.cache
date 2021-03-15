@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "pcg+PfrpM6a52+XUEHUzg474g3WfDhvRkTsi8OfrGACFEBARty2y9COccB8U18/+rowPxTVCoV+3Cn7byxYuKA==",
+  "dgSpecHash": "3y+tpmewFh91jaQn+TEIHQbfnzSniFRfCNNcZajBNt5wcX/5jgIpqMtA+6sJvhQ3FIav2ZGdtrbr+GXF/FLD1w==",
   "success": true,
   "projectFilePath": "G:\\MyProject\\MAChanger\\App\\MAChanger\\MAChanger\\MAChanger.csproj",
   "expectedPackageFiles": [
@@ -8,18 +8,12 @@
     "C:\\Users\\Taiizor\\.nuget\\packages\\microsoft.netcore.platforms\\6.0.0-preview.1.21102.12\\microsoft.netcore.platforms.6.0.0-preview.1.21102.12.nupkg.sha512",
     "C:\\Users\\Taiizor\\.nuget\\packages\\microsoft.visualbasic\\10.4.0-preview.18571.3\\microsoft.visualbasic.10.4.0-preview.18571.3.nupkg.sha512",
     "C:\\Users\\Taiizor\\.nuget\\packages\\microsoft.win32.registry\\6.0.0-preview.1.21102.12\\microsoft.win32.registry.6.0.0-preview.1.21102.12.nupkg.sha512",
-    "C:\\Users\\Taiizor\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
-    "C:\\Users\\Taiizor\\.nuget\\packages\\realtaiizor\\3.7.8.2\\realtaiizor.3.7.8.2.nupkg.sha512",
+    "C:\\Users\\Taiizor\\.nuget\\packages\\realtaiizor\\3.7.8.3\\realtaiizor.3.7.8.3.nupkg.sha512",
     "C:\\Users\\Taiizor\\.nuget\\packages\\system.codedom\\6.0.0-preview.1.21102.12\\system.codedom.6.0.0-preview.1.21102.12.nupkg.sha512",
-    "C:\\Users\\Taiizor\\.nuget\\packages\\system.configuration.configurationmanager\\5.0.0\\system.configuration.configurationmanager.5.0.0.nupkg.sha512",
-    "C:\\Users\\Taiizor\\.nuget\\packages\\system.drawing.common\\5.0.1\\system.drawing.common.5.0.1.nupkg.sha512",
     "C:\\Users\\Taiizor\\.nuget\\packages\\system.management\\6.0.0-preview.1.21102.12\\system.management.6.0.0-preview.1.21102.12.nupkg.sha512",
-    "C:\\Users\\Taiizor\\.nuget\\packages\\system.resources.extensions\\5.0.0\\system.resources.extensions.5.0.0.nupkg.sha512",
     "C:\\Users\\Taiizor\\.nuget\\packages\\system.security.accesscontrol\\6.0.0-preview.1.21102.12\\system.security.accesscontrol.6.0.0-preview.1.21102.12.nupkg.sha512",
-    "C:\\Users\\Taiizor\\.nuget\\packages\\system.security.cryptography.protecteddata\\5.0.0\\system.security.cryptography.protecteddata.5.0.0.nupkg.sha512",
-    "C:\\Users\\Taiizor\\.nuget\\packages\\system.security.permissions\\5.0.0\\system.security.permissions.5.0.0.nupkg.sha512",
     "C:\\Users\\Taiizor\\.nuget\\packages\\system.security.principal.windows\\6.0.0-preview.1.21102.12\\system.security.principal.windows.6.0.0-preview.1.21102.12.nupkg.sha512",
-    "C:\\Users\\Taiizor\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512"
+    "C:\\Users\\Taiizor\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.3\\microsoft.netcore.app.host.win-x64.5.0.3.nupkg.sha512"
   ],
   "logs": []
 }
