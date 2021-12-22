@@ -2,7 +2,6 @@ G:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Release\net48\MAChanger.exe.c
 G:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Release\net48\MAChanger.exe
 G:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Release\net48\MAChanger.pdb
 G:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Release\net48\ReaLTaiizor.dll
-G:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Release\net48\MAChanger.csprojAssemblyReference.cache
 G:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Release\net48\MAChanger.g.resources
 G:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Release\net48\MAChanger.LAST.resources
 G:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Release\net48\MAChanger.MAIN.resources
@@ -13,3 +12,6 @@ G:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Release\net48\MAChanger.cspro
 G:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Release\net48\MAChanger.csproj.CopyComplete
 G:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Release\net48\MAChanger.exe
 G:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Release\net48\MAChanger.pdb
+G:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Release\net48\System.CodeDom.dll
+G:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Release\net48\MAChanger.csproj.AssemblyReference.cache
+G:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Release\net48\MAChanger.csproj.SuggestedBindingRedirects.cache

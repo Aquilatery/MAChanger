@@ -2,14 +2,11 @@ G:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Release\net6.0-windows\MAChan
 G:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Release\net6.0-windows\MAChanger.dll.config
 G:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Release\net6.0-windows\MAChanger.deps.json
 G:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Release\net6.0-windows\MAChanger.runtimeconfig.json
-G:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Release\net6.0-windows\MAChanger.runtimeconfig.dev.json
 G:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Release\net6.0-windows\MAChanger.dll
 G:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Release\net6.0-windows\ref\MAChanger.dll
 G:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Release\net6.0-windows\MAChanger.pdb
 G:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Release\net6.0-windows\ReaLTaiizor.dll
 G:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Release\net6.0-windows\System.Management.dll
-G:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Release\net6.0-windows\runtimes\win\lib\netcoreapp2.0\System.Management.dll
-G:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Release\net6.0-windows\MAChanger.csprojAssemblyReference.cache
 G:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Release\net6.0-windows\MAChanger.g.resources
 G:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Release\net6.0-windows\MAChanger.LAST.resources
 G:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Release\net6.0-windows\MAChanger.MAIN.resources
@@ -22,3 +19,6 @@ G:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Release\net6.0-windows\MAChan
 G:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Release\net6.0-windows\ref\MAChanger.dll
 G:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Release\net6.0-windows\MAChanger.pdb
 G:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Release\net6.0-windows\MAChanger.genruntimeconfig.cache
+G:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Release\net6.0-windows\System.CodeDom.dll
+G:\MyProject\MAChanger\App\MAChanger\MAChanger\bin\Release\net6.0-windows\runtimes\win\lib\net6.0\System.Management.dll
+G:\MyProject\MAChanger\App\MAChanger\MAChanger\obj\Release\net6.0-windows\MAChanger.csproj.AssemblyReference.cache

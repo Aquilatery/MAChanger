@@ -10,114 +10,65 @@
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
           "Microsoft.VisualBasic": "10.4.0-preview.18571.3",
-          "ReaLTaiizor": "3.7.8.3",
-          "System.Management": "6.0.0-preview.1.21102.12"
+          "ReaLTaiizor": "3.7.8.5",
+          "System.Management": "6.0.1-mauipre.1.21616.2"
         },
         "runtime": {
           "MAChanger.dll": {}
         }
       },
       "Microsoft.CSharp/4.7.0": {},
-      "Microsoft.NETCore.Platforms/6.0.0-preview.1.21102.12": {},
+      "Microsoft.NETCore.Platforms/5.0.0": {},
       "Microsoft.VisualBasic/10.4.0-preview.18571.3": {},
-      "Microsoft.Win32.Registry/6.0.0-preview.1.21102.12": {
+      "Microsoft.Win32.Registry/5.0.0": {
         "dependencies": {
-          "System.Security.AccessControl": "6.0.0-preview.1.21102.12",
-          "System.Security.Principal.Windows": "6.0.0-preview.1.21102.12"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.21.10212"
-          }
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
-            "rid": "win",
-            "assetType": "runtime",
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.21.10212"
-          }
+          "System.Security.AccessControl": "5.0.0",
+          "System.Security.Principal.Windows": "5.0.0"
         }
       },
-      "ReaLTaiizor/3.7.8.3": {
+      "ReaLTaiizor/3.7.8.5": {
         "runtime": {
           "lib/net5.0-windows7.0/ReaLTaiizor.dll": {
-            "assemblyVersion": "3.7.8.3",
-            "fileVersion": "3.7.8.3"
+            "assemblyVersion": "3.7.8.5",
+            "fileVersion": "3.7.8.5"
           }
         }
       },
-      "System.CodeDom/6.0.0-preview.1.21102.12": {
+      "System.CodeDom/6.0.1-mauipre.1.21616.2": {
         "runtime": {
           "lib/netstandard2.0/System.CodeDom.dll": {
             "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.21.10212"
+            "fileVersion": "6.0.121.61602"
           }
         }
       },
-      "System.Management/6.0.0-preview.1.21102.12": {
+      "System.Management/6.0.1-mauipre.1.21616.2": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "6.0.0-preview.1.21102.12",
-          "Microsoft.Win32.Registry": "6.0.0-preview.1.21102.12",
-          "System.CodeDom": "6.0.0-preview.1.21102.12"
+          "Microsoft.Win32.Registry": "5.0.0",
+          "System.CodeDom": "6.0.1-mauipre.1.21616.2"
         },
         "runtime": {
-          "lib/netstandard2.0/System.Management.dll": {
+          "lib/netcoreapp3.1/System.Management.dll": {
             "assemblyVersion": "4.0.0.0",
-            "fileVersion": "6.0.21.10212"
+            "fileVersion": "6.0.121.61602"
           }
         },
         "runtimeTargets": {
-          "runtimes/win/lib/netcoreapp2.0/System.Management.dll": {
+          "runtimes/win/lib/netcoreapp3.1/System.Management.dll": {
             "rid": "win",
             "assetType": "runtime",
             "assemblyVersion": "4.0.0.0",
-            "fileVersion": "6.0.21.10212"
+            "fileVersion": "6.0.121.61602"
           }
         }
       },
-      "System.Security.AccessControl/6.0.0-preview.1.21102.12": {
+      "System.Security.AccessControl/5.0.0": {
         "dependencies": {
-          "System.Security.Principal.Windows": "6.0.0-preview.1.21102.12"
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Security.AccessControl.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.21.10212"
-          }
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/netstandard2.0/System.Security.AccessControl.dll": {
-            "rid": "win",
-            "assetType": "runtime",
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.21.10212"
-          }
+          "Microsoft.NETCore.Platforms": "5.0.0",
+          "System.Security.Principal.Windows": "5.0.0"
         }
       },
-      "System.Security.Principal.Windows/6.0.0-preview.1.21102.12": {
-        "runtime": {
-          "lib/netstandard2.0/System.Security.Principal.Windows.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.21.10212"
-          }
-        },
-        "runtimeTargets": {
-          "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
-            "rid": "unix",
-            "assetType": "runtime",
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.21.10212"
-          },
-          "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
-            "rid": "win",
-            "assetType": "runtime",
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.21.10212"
-          }
-        }
-      }
+      "System.Security.Principal.Windows/5.0.0": {}
     }
   },
   "libraries": {
@@ -133,12 +84,12 @@
       "path": "microsoft.csharp/4.7.0",
       "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
     },
-    "Microsoft.NETCore.Platforms/6.0.0-preview.1.21102.12": {
+    "Microsoft.NETCore.Platforms/5.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-mdF/p3nqdGOOzMGSiO1nf6M0/LmJziyfDW1H16TYwZvj++4+bC4VzH7BEUyX8IjcXJCxvO2uTfym/ZeNJVGthA==",
-      "path": "microsoft.netcore.platforms/6.0.0-preview.1.21102.12",
-      "hashPath": "microsoft.netcore.platforms.6.0.0-preview.1.21102.12.nupkg.sha512"
+      "sha512": "sha512-VyPlqzH2wavqquTcYpkIIAQ6WdenuKoFN0BdYBbCWsclXacSOHNQn66Gt4z5NBqEYW0FAPm5rlvki9ZiCij5xQ==",
+      "path": "microsoft.netcore.platforms/5.0.0",
+      "hashPath": "microsoft.netcore.platforms.5.0.0.nupkg.sha512"
     },
     "Microsoft.VisualBasic/10.4.0-preview.18571.3": {
       "type": "package",
@@ -147,47 +98,47 @@
       "path": "microsoft.visualbasic/10.4.0-preview.18571.3",
       "hashPath": "microsoft.visualbasic.10.4.0-preview.18571.3.nupkg.sha512"
     },
-    "Microsoft.Win32.Registry/6.0.0-preview.1.21102.12": {
+    "Microsoft.Win32.Registry/5.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-J95AsOzp0ZeBOQgTUMqzavcVhuKx+rMGtmKASwnZGa/GPT+Jknk9Q0vSvznZNrb+hrIxlhxXzXug2Lx3NtbEkw==",
-      "path": "microsoft.win32.registry/6.0.0-preview.1.21102.12",
-      "hashPath": "microsoft.win32.registry.6.0.0-preview.1.21102.12.nupkg.sha512"
+      "sha512": "sha512-dDoKi0PnDz31yAyETfRntsLArTlVAVzUzCIvvEDsDsucrl33Dl8pIJG06ePTJTI3tGpeyHS9Cq7Foc/s4EeKcg==",
+      "path": "microsoft.win32.registry/5.0.0",
+      "hashPath": "microsoft.win32.registry.5.0.0.nupkg.sha512"
     },
-    "ReaLTaiizor/3.7.8.3": {
+    "ReaLTaiizor/3.7.8.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-e7W4bfG8dp0n5pClVKOomtoNwQs9xq+pXQwboSBXATPC2KdNTutkskhCCSfSGew2Vq0MGaLagQlp3gYzZPkIRg==",
-      "path": "realtaiizor/3.7.8.3",
-      "hashPath": "realtaiizor.3.7.8.3.nupkg.sha512"
+      "sha512": "sha512-Ii7HHUZifkTgerZ9mbksg2FVCtiG3PgKNZzMy9skdcrzavLfYVbNxBFTodNfnDl+KII9QZ2fxpBmy7quFT44VA==",
+      "path": "realtaiizor/3.7.8.5",
+      "hashPath": "realtaiizor.3.7.8.5.nupkg.sha512"
     },
-    "System.CodeDom/6.0.0-preview.1.21102.12": {
+    "System.CodeDom/6.0.1-mauipre.1.21616.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-xXaCJThmb2PCdRunsbK0o5giR5kkIdlzNNpwmwHrjy6PXmRkxBXswRBpKFpuaewiv7u/eTw5nTsZUMyUEGhTYA==",
-      "path": "system.codedom/6.0.0-preview.1.21102.12",
-      "hashPath": "system.codedom.6.0.0-preview.1.21102.12.nupkg.sha512"
+      "sha512": "sha512-HNAYW845t0qNm0vsuR8nBD2EjxUhizuDRYX5p5GUhIdGWwQGruDvtgTVxD+oo6wRXA/8AQSdLAOoaFe5bSK44w==",
+      "path": "system.codedom/6.0.1-mauipre.1.21616.2",
+      "hashPath": "system.codedom.6.0.1-mauipre.1.21616.2.nupkg.sha512"
     },
-    "System.Management/6.0.0-preview.1.21102.12": {
+    "System.Management/6.0.1-mauipre.1.21616.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-yVySvnvaOpc8Y6YW0b6/q2gij3nOsgC38Z8L2cEN3SuCbBLREngaUGG4GjVbd3Pjt6+RSE3TkJe8qgDp2dokIg==",
-      "path": "system.management/6.0.0-preview.1.21102.12",
-      "hashPath": "system.management.6.0.0-preview.1.21102.12.nupkg.sha512"
+      "sha512": "sha512-StXo7HbCNE+SXEEOLcUtO0HZlHBfMHZfSMpBPZHrFiy6qefsLLEl2HvKCo+03sfU37XFQtAotz3DeBOY2NMbyw==",
+      "path": "system.management/6.0.1-mauipre.1.21616.2",
+      "hashPath": "system.management.6.0.1-mauipre.1.21616.2.nupkg.sha512"
     },
-    "System.Security.AccessControl/6.0.0-preview.1.21102.12": {
+    "System.Security.AccessControl/5.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ktolUj5qAMDdgrNVKz572ljuhSFFsHUBrWajl1n8o3NuNxh8tZaBf/QFOShI6m9w910uHv7BFBr3KD5A/6CpsA==",
-      "path": "system.security.accesscontrol/6.0.0-preview.1.21102.12",
-      "hashPath": "system.security.accesscontrol.6.0.0-preview.1.21102.12.nupkg.sha512"
+      "sha512": "sha512-dagJ1mHZO3Ani8GH0PHpPEe/oYO+rVdbQjvjJkBRNQkX4t0r1iaeGn8+/ybkSLEan3/slM0t59SVdHzuHf2jmw==",
+      "path": "system.security.accesscontrol/5.0.0",
+      "hashPath": "system.security.accesscontrol.5.0.0.nupkg.sha512"
     },
-    "System.Security.Principal.Windows/6.0.0-preview.1.21102.12": {
+    "System.Security.Principal.Windows/5.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-2QE5BJwp0SHC6KAb/NYf6HzaVXN3oqEIe+JYiwCNuF8mcOb81WOc1XP5i8LmqAcTFrMlF41fi+JVgnV3w/n13A==",
-      "path": "system.security.principal.windows/6.0.0-preview.1.21102.12",
-      "hashPath": "system.security.principal.windows.6.0.0-preview.1.21102.12.nupkg.sha512"
+      "sha512": "sha512-t0MGLukB5WAVU9bO3MGzvlGnyJPgUlcwerXn1kzBRjwLKixT96XV0Uza41W49gVd8zEMFu9vQEFlv0IOrytICA==",
+      "path": "system.security.principal.windows/5.0.0",
+      "hashPath": "system.security.principal.windows.5.0.0.nupkg.sha512"
     }
   }
 }

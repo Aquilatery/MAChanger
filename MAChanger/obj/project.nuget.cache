@@ -1,19 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "3y+tpmewFh91jaQn+TEIHQbfnzSniFRfCNNcZajBNt5wcX/5jgIpqMtA+6sJvhQ3FIav2ZGdtrbr+GXF/FLD1w==",
+  "dgSpecHash": "xbNWcYsghCii5VXRuDeKHN+IbBZh+g9+jaxx/Bx1Y9omkIKdKpidunWPEIUWp4qoQzhafK311TTZHP776VZl3Q==",
   "success": true,
   "projectFilePath": "G:\\MyProject\\MAChanger\\App\\MAChanger\\MAChanger\\MAChanger.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Taiizor\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
-    "C:\\Users\\Taiizor\\.nuget\\packages\\microsoft.netcore.platforms\\6.0.0-preview.1.21102.12\\microsoft.netcore.platforms.6.0.0-preview.1.21102.12.nupkg.sha512",
+    "C:\\Users\\Taiizor\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\Taiizor\\.nuget\\packages\\microsoft.visualbasic\\10.4.0-preview.18571.3\\microsoft.visualbasic.10.4.0-preview.18571.3.nupkg.sha512",
-    "C:\\Users\\Taiizor\\.nuget\\packages\\microsoft.win32.registry\\6.0.0-preview.1.21102.12\\microsoft.win32.registry.6.0.0-preview.1.21102.12.nupkg.sha512",
-    "C:\\Users\\Taiizor\\.nuget\\packages\\realtaiizor\\3.7.8.3\\realtaiizor.3.7.8.3.nupkg.sha512",
-    "C:\\Users\\Taiizor\\.nuget\\packages\\system.codedom\\6.0.0-preview.1.21102.12\\system.codedom.6.0.0-preview.1.21102.12.nupkg.sha512",
-    "C:\\Users\\Taiizor\\.nuget\\packages\\system.management\\6.0.0-preview.1.21102.12\\system.management.6.0.0-preview.1.21102.12.nupkg.sha512",
-    "C:\\Users\\Taiizor\\.nuget\\packages\\system.security.accesscontrol\\6.0.0-preview.1.21102.12\\system.security.accesscontrol.6.0.0-preview.1.21102.12.nupkg.sha512",
-    "C:\\Users\\Taiizor\\.nuget\\packages\\system.security.principal.windows\\6.0.0-preview.1.21102.12\\system.security.principal.windows.6.0.0-preview.1.21102.12.nupkg.sha512",
-    "C:\\Users\\Taiizor\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.3\\microsoft.netcore.app.host.win-x64.5.0.3.nupkg.sha512"
+    "C:\\Users\\Taiizor\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
+    "C:\\Users\\Taiizor\\.nuget\\packages\\realtaiizor\\3.7.8.5\\realtaiizor.3.7.8.5.nupkg.sha512",
+    "C:\\Users\\Taiizor\\.nuget\\packages\\system.codedom\\6.0.1-mauipre.1.21616.2\\system.codedom.6.0.1-mauipre.1.21616.2.nupkg.sha512",
+    "C:\\Users\\Taiizor\\.nuget\\packages\\system.management\\6.0.1-mauipre.1.21616.2\\system.management.6.0.1-mauipre.1.21616.2.nupkg.sha512",
+    "C:\\Users\\Taiizor\\.nuget\\packages\\system.security.accesscontrol\\5.0.0\\system.security.accesscontrol.5.0.0.nupkg.sha512",
+    "C:\\Users\\Taiizor\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }
