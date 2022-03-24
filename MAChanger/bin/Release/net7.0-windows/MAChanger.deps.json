@@ -1,0 +1,94 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "MAChanger/1.0.0": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "Microsoft.VisualBasic": "10.4.0-preview.18571.3",
+          "ReaLTaiizor": "3.7.8.5",
+          "System.Management": "7.0.0-preview.2.22152.2"
+        },
+        "runtime": {
+          "MAChanger.dll": {}
+        }
+      },
+      "Microsoft.CSharp/4.7.0": {},
+      "Microsoft.VisualBasic/10.4.0-preview.18571.3": {},
+      "ReaLTaiizor/3.7.8.5": {
+        "runtime": {
+          "lib/net6.0-windows7.0/ReaLTaiizor.dll": {
+            "assemblyVersion": "3.7.8.5",
+            "fileVersion": "3.7.8.5"
+          }
+        }
+      },
+      "System.CodeDom/7.0.0-preview.2.22152.2": {},
+      "System.Management/7.0.0-preview.2.22152.2": {
+        "dependencies": {
+          "System.CodeDom": "7.0.0-preview.2.22152.2"
+        },
+        "runtime": {
+          "lib/net7.0/System.Management.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "7.0.22.15202"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net7.0/System.Management.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "7.0.22.15202"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MAChanger/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.CSharp/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "path": "microsoft.csharp/4.7.0",
+      "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
+    },
+    "Microsoft.VisualBasic/10.4.0-preview.18571.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9o+ngDFh/65nEtLaMJ4I7nsMFqTYStbMzdp0gX0ytOFs77WrCNMoEEt72fRHvDbcPXmFD/+UF6LOPqEdcU//0Q==",
+      "path": "microsoft.visualbasic/10.4.0-preview.18571.3",
+      "hashPath": "microsoft.visualbasic.10.4.0-preview.18571.3.nupkg.sha512"
+    },
+    "ReaLTaiizor/3.7.8.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Ii7HHUZifkTgerZ9mbksg2FVCtiG3PgKNZzMy9skdcrzavLfYVbNxBFTodNfnDl+KII9QZ2fxpBmy7quFT44VA==",
+      "path": "realtaiizor/3.7.8.5",
+      "hashPath": "realtaiizor.3.7.8.5.nupkg.sha512"
+    },
+    "System.CodeDom/7.0.0-preview.2.22152.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-siDI0ZuaiDIgJJg5ucVmQyY9sfjUwmqC/acsDIX8/ES8Fl752F3ia2pb4zE39P64PieZhI07O31wahlKlbd4PQ==",
+      "path": "system.codedom/7.0.0-preview.2.22152.2",
+      "hashPath": "system.codedom.7.0.0-preview.2.22152.2.nupkg.sha512"
+    },
+    "System.Management/7.0.0-preview.2.22152.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FvugEwKVScwyJl7ZA/viSpDph2av4gjQxrgBpwVg7sJeCtwAwE6eS/UqzyJvMnFtZORBwrY2xm/Y3Ypg308j1A==",
+      "path": "system.management/7.0.0-preview.2.22152.2",
+      "hashPath": "system.management.7.0.0-preview.2.22152.2.nupkg.sha512"
+    }
+  }
+}

@@ -24,13 +24,11 @@
         ],
         "originalTargetFrameworks": [
           "net48",
-          "net5.0-windows",
           "net6.0-windows",
-          "netcoreapp3.1-windows"
+          "net7.0-windows"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://myget.org/F/caliburn-micro-builds/api/v3/index.json": {},
           "https://pkgs.dev.azure.com/azure-public/vside/_packaging/xamarin-impl/nuget/v3/index.json": {},
@@ -38,16 +36,12 @@
           "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet6/nuget/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1-windows",
-            "projectReferences": {}
-          },
-          "net5.0-windows7.0": {
-            "targetAlias": "net5.0-windows",
-            "projectReferences": {}
-          },
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
+            "projectReferences": {}
+          },
+          "net7.0-windows7.0": {
+            "targetAlias": "net7.0-windows",
             "projectReferences": {}
           },
           "net48": {
@@ -62,86 +56,6 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1-windows",
-          "dependencies": {
-            "Microsoft.CSharp": {
-              "target": "Package",
-              "version": "[4.7.0, )"
-            },
-            "Microsoft.VisualBasic": {
-              "target": "Package",
-              "version": "[10.4.0-preview.18571.3, )"
-            },
-            "ReaLTaiizor": {
-              "target": "Package",
-              "version": "[3.7.8.5, )"
-            },
-            "System.Management": {
-              "target": "Package",
-              "version": "[6.0.1-mauipre.1.21616.2, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            },
-            "Microsoft.WindowsDesktop.App.WindowsForms": {
-              "privateAssets": "none"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
-        },
-        "net5.0-windows7.0": {
-          "targetAlias": "net5.0-windows",
-          "dependencies": {
-            "Microsoft.CSharp": {
-              "target": "Package",
-              "version": "[4.7.0, )"
-            },
-            "Microsoft.VisualBasic": {
-              "target": "Package",
-              "version": "[10.4.0-preview.18571.3, )"
-            },
-            "ReaLTaiizor": {
-              "target": "Package",
-              "version": "[3.7.8.5, )"
-            },
-            "System.Management": {
-              "target": "Package",
-              "version": "[6.0.1-mauipre.1.21616.2, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            },
-            "Microsoft.WindowsDesktop.App.WindowsForms": {
-              "privateAssets": "none"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
-        },
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
@@ -159,7 +73,65 @@
             },
             "System.Management": {
               "target": "Package",
-              "version": "[6.0.1-mauipre.1.21616.2, )"
+              "version": "[7.0.0-preview.2.22152.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.0, 6.0.0]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.2, 6.0.2]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.0, 6.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.0, 6.0.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-preview.2.22153.17\\RuntimeIdentifierGraph.json"
+        },
+        "net7.0-windows7.0": {
+          "targetAlias": "net7.0-windows",
+          "dependencies": {
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "Microsoft.VisualBasic": {
+              "target": "Package",
+              "version": "[10.4.0-preview.18571.3, )"
+            },
+            "ReaLTaiizor": {
+              "target": "Package",
+              "version": "[3.7.8.5, )"
+            },
+            "System.Management": {
+              "target": "Package",
+              "version": "[7.0.0-preview.2.22152.2, )"
             }
           },
           "imports": [
@@ -180,7 +152,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-preview.2.22153.17\\RuntimeIdentifierGraph.json"
         },
         "net48": {
           "targetAlias": "net48",
@@ -199,10 +171,10 @@
             },
             "System.Management": {
               "target": "Package",
-              "version": "[6.0.1-mauipre.1.21616.2, )"
+              "version": "[7.0.0-preview.2.22152.2, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-preview.2.22153.17\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

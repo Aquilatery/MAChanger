@@ -11,7 +11,7 @@
           "Microsoft.CSharp": "4.7.0",
           "Microsoft.VisualBasic": "10.4.0-preview.18571.3",
           "ReaLTaiizor": "3.7.8.5",
-          "System.Management": "6.0.1-mauipre.1.21616.2"
+          "System.Management": "7.0.0-preview.2.22152.2"
         },
         "runtime": {
           "MAChanger.dll": {}
@@ -27,22 +27,22 @@
           }
         }
       },
-      "System.CodeDom/6.0.1-mauipre.1.21616.2": {
+      "System.CodeDom/7.0.0-preview.2.22152.2": {
         "runtime": {
           "lib/net6.0/System.CodeDom.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.121.61602"
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.15202"
           }
         }
       },
-      "System.Management/6.0.1-mauipre.1.21616.2": {
+      "System.Management/7.0.0-preview.2.22152.2": {
         "dependencies": {
-          "System.CodeDom": "6.0.1-mauipre.1.21616.2"
+          "System.CodeDom": "7.0.0-preview.2.22152.2"
         },
         "runtime": {
           "lib/net6.0/System.Management.dll": {
             "assemblyVersion": "4.0.0.0",
-            "fileVersion": "6.0.121.61602"
+            "fileVersion": "7.0.22.15202"
           }
         },
         "runtimeTargets": {
@@ -50,7 +50,7 @@
             "rid": "win",
             "assetType": "runtime",
             "assemblyVersion": "4.0.0.0",
-            "fileVersion": "6.0.121.61602"
+            "fileVersion": "7.0.22.15202"
           }
         }
       }
@@ -83,19 +83,19 @@
       "path": "realtaiizor/3.7.8.5",
       "hashPath": "realtaiizor.3.7.8.5.nupkg.sha512"
     },
-    "System.CodeDom/6.0.1-mauipre.1.21616.2": {
+    "System.CodeDom/7.0.0-preview.2.22152.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-HNAYW845t0qNm0vsuR8nBD2EjxUhizuDRYX5p5GUhIdGWwQGruDvtgTVxD+oo6wRXA/8AQSdLAOoaFe5bSK44w==",
-      "path": "system.codedom/6.0.1-mauipre.1.21616.2",
-      "hashPath": "system.codedom.6.0.1-mauipre.1.21616.2.nupkg.sha512"
+      "sha512": "sha512-siDI0ZuaiDIgJJg5ucVmQyY9sfjUwmqC/acsDIX8/ES8Fl752F3ia2pb4zE39P64PieZhI07O31wahlKlbd4PQ==",
+      "path": "system.codedom/7.0.0-preview.2.22152.2",
+      "hashPath": "system.codedom.7.0.0-preview.2.22152.2.nupkg.sha512"
     },
-    "System.Management/6.0.1-mauipre.1.21616.2": {
+    "System.Management/7.0.0-preview.2.22152.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-StXo7HbCNE+SXEEOLcUtO0HZlHBfMHZfSMpBPZHrFiy6qefsLLEl2HvKCo+03sfU37XFQtAotz3DeBOY2NMbyw==",
-      "path": "system.management/6.0.1-mauipre.1.21616.2",
-      "hashPath": "system.management.6.0.1-mauipre.1.21616.2.nupkg.sha512"
+      "sha512": "sha512-FvugEwKVScwyJl7ZA/viSpDph2av4gjQxrgBpwVg7sJeCtwAwE6eS/UqzyJvMnFtZORBwrY2xm/Y3Ypg308j1A==",
+      "path": "system.management/7.0.0-preview.2.22152.2",
+      "hashPath": "system.management.7.0.0-preview.2.22152.2.nupkg.sha512"
     }
   }
 }

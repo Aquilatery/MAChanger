@@ -1,18 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "xbNWcYsghCii5VXRuDeKHN+IbBZh+g9+jaxx/Bx1Y9omkIKdKpidunWPEIUWp4qoQzhafK311TTZHP776VZl3Q==",
+  "dgSpecHash": "95R5k1Bg0F38V9UN6qBSi4pL/iUAtkLz+hhbL1imw8WBLoOyry8dbyTHZIt5mGEerL7SHkaJdaZiT9tXmyoMow==",
   "success": true,
   "projectFilePath": "G:\\MyProject\\MAChanger\\App\\MAChanger\\MAChanger\\MAChanger.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Taiizor\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
-    "C:\\Users\\Taiizor\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\Taiizor\\.nuget\\packages\\microsoft.visualbasic\\10.4.0-preview.18571.3\\microsoft.visualbasic.10.4.0-preview.18571.3.nupkg.sha512",
-    "C:\\Users\\Taiizor\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\Taiizor\\.nuget\\packages\\realtaiizor\\3.7.8.5\\realtaiizor.3.7.8.5.nupkg.sha512",
-    "C:\\Users\\Taiizor\\.nuget\\packages\\system.codedom\\6.0.1-mauipre.1.21616.2\\system.codedom.6.0.1-mauipre.1.21616.2.nupkg.sha512",
-    "C:\\Users\\Taiizor\\.nuget\\packages\\system.management\\6.0.1-mauipre.1.21616.2\\system.management.6.0.1-mauipre.1.21616.2.nupkg.sha512",
-    "C:\\Users\\Taiizor\\.nuget\\packages\\system.security.accesscontrol\\5.0.0\\system.security.accesscontrol.5.0.0.nupkg.sha512",
-    "C:\\Users\\Taiizor\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512"
+    "C:\\Users\\Taiizor\\.nuget\\packages\\system.codedom\\7.0.0-preview.2.22152.2\\system.codedom.7.0.0-preview.2.22152.2.nupkg.sha512",
+    "C:\\Users\\Taiizor\\.nuget\\packages\\system.management\\7.0.0-preview.2.22152.2\\system.management.7.0.0-preview.2.22152.2.nupkg.sha512",
+    "C:\\Users\\Taiizor\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.2\\microsoft.netcore.app.host.win-x64.6.0.2.nupkg.sha512",
+    "C:\\Users\\Taiizor\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.0\\microsoft.aspnetcore.app.ref.6.0.0.nupkg.sha512",
+    "C:\\Users\\Taiizor\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.0\\microsoft.windowsdesktop.app.ref.6.0.0.nupkg.sha512",
+    "C:\\Users\\Taiizor\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.0\\microsoft.netcore.app.ref.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }
