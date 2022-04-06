@@ -10,7 +10,7 @@
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
           "Microsoft.VisualBasic": "10.4.0-preview.18571.3",
-          "ReaLTaiizor": "3.7.8.5",
+          "ReaLTaiizor": "3.7.8.6",
           "System.Management": "7.0.0-preview.2.22152.2"
         },
         "runtime": {
@@ -19,11 +19,11 @@
       },
       "Microsoft.CSharp/4.7.0": {},
       "Microsoft.VisualBasic/10.4.0-preview.18571.3": {},
-      "ReaLTaiizor/3.7.8.5": {
+      "ReaLTaiizor/3.7.8.6": {
         "runtime": {
-          "lib/net6.0-windows7.0/ReaLTaiizor.dll": {
-            "assemblyVersion": "3.7.8.5",
-            "fileVersion": "3.7.8.5"
+          "lib/net7.0-windows7.0/ReaLTaiizor.dll": {
+            "assemblyVersion": "3.7.8.6",
+            "fileVersion": "3.7.8.6"
           }
         }
       },
@@ -69,12 +69,12 @@
       "path": "microsoft.visualbasic/10.4.0-preview.18571.3",
       "hashPath": "microsoft.visualbasic.10.4.0-preview.18571.3.nupkg.sha512"
     },
-    "ReaLTaiizor/3.7.8.5": {
+    "ReaLTaiizor/3.7.8.6": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Ii7HHUZifkTgerZ9mbksg2FVCtiG3PgKNZzMy9skdcrzavLfYVbNxBFTodNfnDl+KII9QZ2fxpBmy7quFT44VA==",
-      "path": "realtaiizor/3.7.8.5",
-      "hashPath": "realtaiizor.3.7.8.5.nupkg.sha512"
+      "sha512": "sha512-b7vfciDcXqoIWjYrr760TyyEZSadlAgkaglLFPrRbzHNla7WqaojmC8VzLt/soaD2yGd/56LN0spedW7JcxMFw==",
+      "path": "realtaiizor/3.7.8.6",
+      "hashPath": "realtaiizor.3.7.8.6.nupkg.sha512"
     },
     "System.CodeDom/7.0.0-preview.2.22152.2": {
       "type": "package",

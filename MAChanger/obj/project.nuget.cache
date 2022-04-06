@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "95R5k1Bg0F38V9UN6qBSi4pL/iUAtkLz+hhbL1imw8WBLoOyry8dbyTHZIt5mGEerL7SHkaJdaZiT9tXmyoMow==",
+  "dgSpecHash": "8NxQbExzJBTsGhrYoOjbcUUShLd/vmBGX2hHN6gJF+OqiA6Nsa2IY6pJslHeqAfRkqK7RhTLmiz+2CpOgaMBbw==",
   "success": true,
   "projectFilePath": "G:\\MyProject\\MAChanger\\App\\MAChanger\\MAChanger\\MAChanger.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Taiizor\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Taiizor\\.nuget\\packages\\microsoft.visualbasic\\10.4.0-preview.18571.3\\microsoft.visualbasic.10.4.0-preview.18571.3.nupkg.sha512",
-    "C:\\Users\\Taiizor\\.nuget\\packages\\realtaiizor\\3.7.8.5\\realtaiizor.3.7.8.5.nupkg.sha512",
+    "C:\\Users\\Taiizor\\.nuget\\packages\\realtaiizor\\3.7.8.6\\realtaiizor.3.7.8.6.nupkg.sha512",
     "C:\\Users\\Taiizor\\.nuget\\packages\\system.codedom\\7.0.0-preview.2.22152.2\\system.codedom.7.0.0-preview.2.22152.2.nupkg.sha512",
     "C:\\Users\\Taiizor\\.nuget\\packages\\system.management\\7.0.0-preview.2.22152.2\\system.management.7.0.0-preview.2.22152.2.nupkg.sha512",
     "C:\\Users\\Taiizor\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.2\\microsoft.netcore.app.host.win-x64.6.0.2.nupkg.sha512",
